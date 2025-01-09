@@ -31,19 +31,19 @@ REGISTER APB ADDRESSES (HEX):
         LEFT_FIFO_ADDRESS        8c0001bc
         RIGHT_FIFO_ADDRESS       8c0002ac
  APB CONFIGURATION (HEX):
-        DUT_START_ADDRESS        8c000000
-        DUT_END_ADDRESS          8c0003a0
-        APB_START_ADDRESS        8c000000
-        APB_END_ADDRESS          8c000800
+        DUT_START_ADDRESS        N/A
+        DUT_END_ADDRESS          N/A
+        APB_START_ADDRESS        N/A
+        APB_END_ADDRESS          N/A
  clk CYCLES PER SAMPLE:
-        CLK_DIV_48000                2084
+        CLK_DIV_48000          2084.000000
  CDC PARAREMETRS (INT):
-        CDC_DATASYNC_INTERVAL          42
-        CDC_DATASYNC_LATENCY           24
-        CDC_BITSYNC_INTERVAL            6
-        CDC_BITYNC_LATENCY              2
-        CDC_PULSESYNC_INTERVAL          1
-        CDC_PULSESYNC_LATENCY           8
+        CDC_DATASYNC_INTERVAL    N/A
+        CDC_DATASYNC_LATENCY     N/A
+        CDC_BITSYNC_INTERVAL     N/A
+        CDC_BITYNC_LATENCY       N/A
+        CDC_PULSESYNC_INTERVAL   N/A
+        CDC_PULSESYNC_LATENCY    N/A
  dsp_unit PARAREMETERS:
-        DSP_UNIT_MAX_LATENCY          131
+        DSP_UNIT_MAX_LATENCY   131.000000
 -----------------------------------------------------------------------------------------------

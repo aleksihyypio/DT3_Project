@@ -43,7 +43,7 @@ package audioport_pkg;
    //////////////////////////////////////////////////////////////////   
 
    localparam logic [31:0]  AUDIOPORT_START_ADDRESS  = 32'h8c000000;   
-   localparam logic [31:0]  AUDIOPORT_END_ADDRESS    = 32'h8c0001B8;   
+   localparam logic [31:0]  AUDIOPORT_END_ADDRESS    = 32'h8c0003A0;   
    localparam logic [31:0]  CMD_REG_ADDRESS          = 32'h8c000000;   
    localparam logic [31:0]  STATUS_REG_ADDRESS       = 32'h8c000004;   
    localparam logic [31:0]  LEVEL_REG_ADDRESS        = 32'h8c000008;   

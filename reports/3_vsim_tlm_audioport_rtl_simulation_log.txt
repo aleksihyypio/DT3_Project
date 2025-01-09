@@ -1,0 +1,19 @@
+# do scripts/vsim_rtlsim.tcl
+# 1736442848
+# Script start time: 19:14:08
+# 0
+# 1
+# 1
+# -all
+# QuestaSim
+# ** Error: can't read "DESIGN_NAME": no such variable
+# Error in macro ./scripts/vsim_rtlsim.tcl line 30
+# can't read "DESIGN_NAME": no such variable
+#     while executing
+# "source input/0_setup_${DESIGN_NAME}.tcl"
+#     (file "input/0_setup_design.tcl" line 30)
+#     invoked from within
+# "source ${INPUT_DIR}/0_setup_design.tcl"
+#     (file "scripts/0_setup.tcl" line 56)
+#     invoked from within
+# "source scripts/0_setup.tcl"

@@ -1,6 +1,6 @@
 # do scripts/vsim_rtlsim.tcl
-# 1736437903
-# Script start time: 17:51:43
+# 1736442895
+# Script start time: 19:14:55
 # 0
 # 1
 # 1
@@ -22,26 +22,26 @@
 # -fsmdebug -assertdebug -msgmode both -classdebug -uvmcontrol=all -coverage -debugDB=output/audioport_rtl.dbg
 # 1
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:44 on Jan 09,2025
+# Start time: 19:14:55 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/apb_pkg.sv 
 # -- Compiling package apb_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 17:51:44 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:55 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:44 on Jan 09,2025
+# Start time: 19:14:55 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport_pkg.sv 
 # -- Compiling package audioport_pkg
 # -- Importing package apb_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 17:51:44 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:55 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:44 on Jan 09,2025
+# Start time: 19:14:56 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport_util_pkg.sv 
 # -- Compiling package audioport_util_pkg
 # -- Importing package apb_pkg
@@ -49,10 +49,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 17:51:44 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:56 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:44 on Jan 09,2025
+# Start time: 19:14:56 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/control_unit.sv 
 # -- Compiling package control_unit_sv_unit
 # -- Importing package audioport_pkg
@@ -61,10 +61,10 @@
 # 
 # Top level modules:
 # 	control_unit
-# End time: 17:51:44 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:56 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:44 on Jan 09,2025
+# Start time: 19:14:56 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/dsp_unit.sv 
 # -- Compiling package dsp_unit_sv_unit
 # -- Importing package audioport_pkg
@@ -73,10 +73,10 @@
 # 
 # Top level modules:
 # 	dsp_unit
-# End time: 17:51:44 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:56 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:44 on Jan 09,2025
+# Start time: 19:14:56 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/cdc_unit.sv 
 # -- Compiling package cdc_unit_sv_unit
 # -- Importing package audioport_pkg
@@ -85,10 +85,10 @@
 # 
 # Top level modules:
 # 	cdc_unit
-# End time: 17:51:45 on Jan 09,2025, Elapsed time: 0:00:01
+# End time: 19:14:56 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:45 on Jan 09,2025
+# Start time: 19:14:56 on Jan 09,2025
 # vcom -2008 -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec -mixedsvvh -work work input/i2s_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -96,10 +96,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity i2s_unit
 # -- Compiling architecture RTL of i2s_unit
-# End time: 17:51:45 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:56 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:45 on Jan 09,2025
+# Start time: 19:14:56 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport.sv 
 # -- Compiling package audioport_sv_unit
 # -- Importing package audioport_pkg
@@ -108,10 +108,10 @@
 # 
 # Top level modules:
 # 	audioport
-# End time: 17:51:45 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:56 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:45 on Jan 09,2025
+# Start time: 19:14:56 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/control_unit_svamod.sv 
 # -- Compiling package control_unit_svamod_sv_unit
 # -- Importing package audioport_pkg
@@ -121,10 +121,10 @@
 # 
 # Top level modules:
 # 	control_unit_svamod
-# End time: 17:51:45 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:57 on Jan 09,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0, Suppressed Warnings: 6
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:45 on Jan 09,2025
+# Start time: 19:14:57 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/dsp_unit_svamod.sv 
 # -- Compiling package dsp_unit_svamod_sv_unit
 # -- Importing package audioport_pkg
@@ -134,10 +134,10 @@
 # 
 # Top level modules:
 # 	dsp_unit_svamod
-# End time: 17:51:45 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:57 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:45 on Jan 09,2025
+# Start time: 19:14:57 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/cdc_unit_svamod.sv 
 # -- Compiling package cdc_unit_svamod_sv_unit
 # -- Importing package audioport_pkg
@@ -147,10 +147,10 @@
 # 
 # Top level modules:
 # 	cdc_unit_svamod
-# End time: 17:51:45 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:57 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:45 on Jan 09,2025
+# Start time: 19:14:57 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/i2s_unit_svamod.sv 
 # -- Compiling package i2s_unit_svamod_sv_unit
 # -- Importing package audioport_pkg
@@ -160,10 +160,10 @@
 # 
 # Top level modules:
 # 	i2s_unit_svamod
-# End time: 17:51:46 on Jan 09,2025, Elapsed time: 0:00:01
+# End time: 19:14:57 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:46 on Jan 09,2025
+# Start time: 19:14:57 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport_svamod.sv 
 # -- Compiling package audioport_svamod_sv_unit
 # -- Importing package audioport_pkg
@@ -173,10 +173,10 @@
 # 
 # Top level modules:
 # 	audioport_svamod
-# End time: 17:51:46 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:57 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:46 on Jan 09,2025
+# Start time: 19:14:57 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/apb_if.sv 
 # -- Compiling package apb_if_sv_unit
 # -- Importing package audioport_pkg
@@ -185,10 +185,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 17:51:46 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:57 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:46 on Jan 09,2025
+# Start time: 19:14:57 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/irq_out_if.sv 
 # -- Compiling package irq_out_if_sv_unit
 # -- Importing package audioport_pkg
@@ -197,10 +197,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 17:51:46 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:58 on Jan 09,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:46 on Jan 09,2025
+# Start time: 19:14:58 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/i2s_if.sv 
 # -- Compiling package i2s_if_sv_unit
 # -- Importing package audioport_pkg
@@ -210,10 +210,10 @@
 # 
 # Top level modules:
 # 	i2s_if_tb
-# End time: 17:51:46 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:58 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:46 on Jan 09,2025
+# Start time: 19:14:58 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport_test.sv 
 # -- Compiling package audioport_test_sv_unit
 # -- Importing package audioport_pkg
@@ -223,10 +223,10 @@
 # 
 # Top level modules:
 # 	audioport_test
-# End time: 17:51:46 on Jan 09,2025, Elapsed time: 0:00:00
+# End time: 19:14:58 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:46 on Jan 09,2025
+# Start time: 19:14:58 on Jan 09,2025
 # vlog -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport_tb.sv 
 # -- Compiling package audioport_tb_sv_unit
 # -- Importing package apb_pkg
@@ -236,10 +236,10 @@
 # 
 # Top level modules:
 # 	audioport_tb
-# End time: 17:51:47 on Jan 09,2025, Elapsed time: 0:00:01
+# End time: 19:14:58 on Jan 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vopt 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 17:51:47 on Jan 09,2025
+# Start time: 19:14:58 on Jan 09,2025
 # vopt -suppress 10587 -suppress 13408 "+acc" "+cover=bcxefs" -coverfec -debugdb -noincr -designfile output/audioport_rtl.bin work.audioport_tb -o audioport_rtl_vopt 
 # 
 # Top level modules:
@@ -274,19 +274,19 @@
 # -- Optimizing interface i2s_if(fast)
 # -- Optimizing interface irq_out_if(fast)
 # viscom:
-# VISCOM: Start time: 17:51:47 on Jan 09,2025
+# VISCOM: Start time: 19:14:59 on Jan 09,2025
 # 
 # VISCOM: QuestaSim /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/VisualizerRls/bin/viscom 2024.3_2 at 2024.11 Nov 25 2024
 # VISCOM: Writing output/audioport_rtl.bin
 # VISCOM: Done writing output/audioport_rtl.bin
-# VISCOM: End time: 17:51:47 on Jan 09,2025, Elapsed time: 0:00:00 (Process Size : 317MB, Peak Process Size : 317MB)
+# VISCOM: End time: 19:14:59 on Jan 09,2025, Elapsed time: 0:00:00 (Process Size : 317MB, Peak Process Size : 317MB)
 # 
 # 
 # Optimized design name is audioport_rtl_vopt
-# End time: 17:51:48 on Jan 09,2025, Elapsed time: 0:00:01
+# End time: 19:14:59 on Jan 09,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0, Suppressed Warnings: 1
 # vsim audioport_rtl_vopt -fsmdebug -assertdebug -msgmode both -classdebug -uvmcontrol=all -coverage -debugDB=output/audioport_rtl.dbg 
-# Start time: 17:51:48 on Jan 09,2025
+# Start time: 19:14:59 on Jan 09,2025
 # //  Questa Sim-64
 # //  Version 2024.3_2 linux_x86_64 Nov 25 2024
 # //
@@ -330,8 +330,8 @@
 # ** Note: (vsim-17388) No matching coverage data found.
 # ** Note: (vsim-17388) No matching coverage data found.
 # file18
-# 1736437909
-# Script end time: 17:51:49
+# 1736442900
+# Script end time: 19:15:00
 # Saving coverage database on exit...
-# End time: 17:51:49 on Jan 09,2025, Elapsed time: 0:00:01
+# End time: 19:15:00 on Jan 09,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
