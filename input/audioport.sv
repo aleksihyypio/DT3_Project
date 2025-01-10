@@ -110,18 +110,18 @@ module audioport
        .audio0_in     (daudio0),
        .audio1_in     (daudio1),
        .play_in       (play),
-       .req_out       (req)
+       .req_out       (req),
        .test_mode_in  (test_mode_in),
        .clk           (clk),
        .rst_n         (rst_n),
-       .mclk_in       (mclk),
+       .mclk          (mclk),
        .tick_out      (mtick),
        .audio0_out    (maudio0),
        .audio1_out    (maudio1),
        .play_out      (mplay),
        .req_in        (mreq),
        .muxclk_out    (muxclk),
-       .muxrst_n_out  (muxrst_n),
+       .muxrst_n_out  (muxrst_n)
        );
    // i2s_unit instantiation
     i2s_unit i2s_unit_1
