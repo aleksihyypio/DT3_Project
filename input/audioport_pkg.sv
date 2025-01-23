@@ -13,7 +13,7 @@ package audioport_pkg;
    localparam realtime MCLK_PERIOD      = 54.25347222ns; // Same for all students
 `endif
    localparam int FILTER_TAPS          = 53;
-   localparam int AUDIO_FIFO_SIZE      = 2;
+   localparam int AUDIO_FIFO_SIZE      = 60;
 
    //////////////////////////////////////////////////////////////////
    // 2. Register counts for address computation
@@ -23,7 +23,7 @@ package audioport_pkg;
    localparam int DSP_REGISTERS       = 106;
 
    // Total number of registers excluding FIFOs
-   localparam int AUDIOPORT_REGISTERS = 111;
+   localparam int AUDIOPORT_REGISTERS = 110;
 
    //////////////////////////////////////////////////////////////////
    // 3. Register indices (rindex)

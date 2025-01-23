@@ -41,7 +41,7 @@ add wave -noupdate /control_unit_tb/DUT_INSTANCE/rhead_r
 add wave -noupdate /control_unit_tb/DUT_INSTANCE/rtail_r
 add wave -noupdate /control_unit_tb/DUT_INSTANCE/rlooped_r
 add wave -noupdate /control_unit_tb/DUT_INSTANCE/lfifo
-add wave -noupdate /control_unit_tb/DUT_INSTANCE/lfifo
+add wave -noupdate /control_unit_tb/DUT_INSTANCE/rfifo
 add wave -noupdate /control_unit_tb/DUT_INSTANCE/lempty
 add wave -noupdate /control_unit_tb/DUT_INSTANCE/rempty
 add wave -noupdate /control_unit_tb/DUT_INSTANCE/start

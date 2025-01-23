@@ -5,7 +5,7 @@ package apb_pkg;
    // Address range of DUT
    
    localparam DUT_START_ADDRESS = 32'h8c000000;
-   localparam DUT_END_ADDRESS =   32'h8c0001BC;
+   localparam DUT_END_ADDRESS =   32'h8c0001bc;
 
    
    // Address range of a wider APB bus section that includes the DUT's range.

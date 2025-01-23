@@ -6,10 +6,10 @@ Clock periods:
         mclk                    54.253472 ns
 DESIGN PARAMETERS:
         FILTER_TAPS                    53
-        AUDIO_FIFO_SIZE                 2
+        AUDIO_FIFO_SIZE                60
 REGISTERS:
         DSP_REGISTERS                 106
-        AUDIOPORT_REGISTERS           111
+        AUDIOPORT_REGISTERS           110
 INTERNAL REGISTER INDICES (DECIMAL):
         CMD_REG_INDEX                   0
         STATUS_REG_INDEX                1

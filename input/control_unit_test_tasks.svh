@@ -46,13 +46,33 @@ task apb_test;
 endtask
 
 //////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
 task address_decoding_test;
 //////////////////////////////////////////////////////////////////////////////////////   
    $info("address_decoding_test");
 
+   reset_test;
+   req_in = '0;
    
-endtask
+   // Test valid addresses within range
+   for (int addr = AUDIOPORT_START_ADDRESS; addr <= AUDIOPORT_END_ADDRESS; addr += 4) begin
+      wdata = addr >> 2; // Example: write expected index
+      apb.write(addr, wdata, wfail);
+      apb.read(addr, rdata, rfail);
+      ia_address_decoding_test1: assert (!wfail && !rfail && (rdata == (addr - AUDIOPORT_START_ADDRESS) >> 2)) else
+        assert_error($sformatf ("Address decoding failed for address %h", addr));
+   end
 
+   // Test invalid address outside range
+   addr = AUDIOPORT_START_ADDRESS - 4;
+   apb.write(addr, wdata, wfail);
+   apb.read(addr, rdata, rfail);
+   ia_address_decoding_test2: assert (wfail && rfail) else 
+     assert_error($sformatf ("Invalid address decoding did not fail for address %h", addr));
+   
+   update_test_stats;
+
+endtask
 
 //////////////////////////////////////////////////////////////////////////////////////
 task register_test;

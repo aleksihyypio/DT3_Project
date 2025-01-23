@@ -18,7 +18,7 @@
 //////////////////////////////////////////////////////////////////
 
 #define DSP_REGISTERS       106
-#define AUDIOPORT_REGISTERS 111
+#define AUDIOPORT_REGISTERS 110
 
 //////////////////////////////////////////////////////////////////
 // 3. Register indicec
@@ -29,24 +29,24 @@
 #define LEVEL_REG_INDEX       2
 #define CFG_REG_INDEX         3
 #define DSP_REGS_START_INDEX  4
-#define DSP_REGS_END_INDEX    110
-#define LEFT_FIFO_INDEX       111
-#define RIGHT_FIFO_INDEX      171
+#define DSP_REGS_END_INDEX    109
+#define LEFT_FIFO_INDEX       110
+#define RIGHT_FIFO_INDEX      111
 
 //////////////////////////////////////////////////////////////////
 // 4. Register addresses in APB address spaces
 //////////////////////////////////////////////////////////////////   
 
 #define AUDIOPORT_START_ADDRESS  0x8c000000   
-#define AUDIOPORT_END_ADDRESS    0x8c0003A0   
+#define AUDIOPORT_END_ADDRESS    0x8c0001BC   
 #define CMD_REG_ADDRESS          0x8c000000   
 #define STATUS_REG_ADDRESS       0x8c000004   
 #define LEVEL_REG_ADDRESS        0x8c000008   
 #define CFG_REG_ADDRESS          0x8c00000C   
 #define DSP_REGS_START_ADDRESS   0x8c000010   
-#define DSP_REGS_END_ADDRESS     0x8c0001B8   
-#define LEFT_FIFO_ADDRESS        0x8c0001BC   
-#define RIGHT_FIFO_ADDRESS       0x8c0002AC   
+#define DSP_REGS_END_ADDRESS     0x8c0001B4   
+#define LEFT_FIFO_ADDRESS        0x8c0001B8   
+#define RIGHT_FIFO_ADDRESS       0x8c0001BC   
 
 //////////////////////////////////////////////////////////////////
 // 5. Useful Constants
