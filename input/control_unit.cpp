@@ -47,7 +47,7 @@ void control_unit::control_regs_proc()
 void control_unit::bus_decoder()
 {
   if(PSEL.read() == 1)
-    rindex.write( (PADDR.read() - (AUDIOPORT_START_ADDRESS) >> 2) );
+    rindex.write( ((PADDR.read() - AUDIOPORT_START_ADDRESS) >> 2) );
   else
     rindex.write(0);
 

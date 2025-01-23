@@ -1,0 +1,13 @@
+Recursive Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /control_unit_tb/DUT_INSTANCE
+=== Design Unit: work.control_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                       1204        77      1127     6.39%
+
+
+Total Coverage By Instance (filtered view): 6.39%
+

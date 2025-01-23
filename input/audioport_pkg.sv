@@ -13,7 +13,7 @@ package audioport_pkg;
    localparam realtime MCLK_PERIOD      = 54.25347222ns; // Same for all students
 `endif
    localparam int FILTER_TAPS          = 53;
-   localparam int AUDIO_FIFO_SIZE      = 60;
+   localparam int AUDIO_FIFO_SIZE      = 2;
 
    //////////////////////////////////////////////////////////////////
    // 2. Register counts for address computation
@@ -34,24 +34,24 @@ package audioport_pkg;
    localparam int LEVEL_REG_INDEX      = 2;
    localparam int CFG_REG_INDEX        = 3;
    localparam int DSP_REGS_START_INDEX = 4;
-   localparam int DSP_REGS_END_INDEX   = 110;
-   localparam int LEFT_FIFO_INDEX      = 111;
-   localparam int RIGHT_FIFO_INDEX     = 171;
+   localparam int DSP_REGS_END_INDEX   = 109;
+   localparam int LEFT_FIFO_INDEX      = 110;
+   localparam int RIGHT_FIFO_INDEX     = 111;
    
    //////////////////////////////////////////////////////////////////
    // 4. Register addresses in APB address space
    //////////////////////////////////////////////////////////////////   
 
    localparam logic [31:0]  AUDIOPORT_START_ADDRESS  = 32'h8c000000;   
-   localparam logic [31:0]  AUDIOPORT_END_ADDRESS    = 32'h8c0003A0;   
+   localparam logic [31:0]  AUDIOPORT_END_ADDRESS    = 32'h8c0001BC;   
    localparam logic [31:0]  CMD_REG_ADDRESS          = 32'h8c000000;   
    localparam logic [31:0]  STATUS_REG_ADDRESS       = 32'h8c000004;   
    localparam logic [31:0]  LEVEL_REG_ADDRESS        = 32'h8c000008;   
    localparam logic [31:0]  CFG_REG_ADDRESS          = 32'h8c00000C;   
    localparam logic [31:0]  DSP_REGS_START_ADDRESS   = 32'h8c000010;   
-   localparam logic [31:0]  DSP_REGS_END_ADDRESS     = 32'h8c0001B8;   
-   localparam logic [31:0]  LEFT_FIFO_ADDRESS        = 32'h8c0001BC;   
-   localparam logic [31:0]  RIGHT_FIFO_ADDRESS       = 32'h8c0002AC;   
+   localparam logic [31:0]  DSP_REGS_END_ADDRESS     = 32'h8c0001B4;   
+   localparam logic [31:0]  LEFT_FIFO_ADDRESS        = 32'h8c0001B8;   
+   localparam logic [31:0]  RIGHT_FIFO_ADDRESS       = 32'h8c0001BC;   
    
    //////////////////////////////////////////////////////////////////
    // 5. Useful Constants

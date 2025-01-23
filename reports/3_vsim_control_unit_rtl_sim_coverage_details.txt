@@ -1,0 +1,69 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /control_unit_tb/DUT_INSTANCE
+=== Design Unit: work.control_unit
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                       1204        77      1127     6.39%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /control_unit_tb/DUT_INSTANCE --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                        PADDR[0-1]           0           0           0           0           0           0           3        0.00 
+                                      PADDR[28-30]           0           0           0           0           0           0           3        0.00 
+                                      PRDATA[0-31]           0           0           0           0           0           0           3        0.00 
+                                            PREADY           0           0           0           0           0           0           3        0.00 
+                                           PSLVERR           0           0           0           0           0           0           3        0.00 
+                                       PWDATA[0-2]           0           1           0           0           0           0           3       16.66 
+                                       PWDATA[3-5]           0           0           0           0           0           0           3        0.00 
+                                         PWDATA[6]           0           1           0           0           0           0           3       16.66 
+                                         PWDATA[7]           0           0           0           0           0           0           3        0.00 
+                                         PWDATA[8]           0           1           0           0           0           0           3       16.66 
+                                      PWDATA[9-10]           0           0           0           0           0           0           3        0.00 
+                                     PWDATA[11-12]           0           1           0           0           0           0           3       16.66 
+                                     PWDATA[13-18]           0           0           0           0           0           0           3        0.00 
+                                     PWDATA[19-20]           0           1           0           0           0           0           3       16.66 
+                                     PWDATA[21-22]           0           0           0           0           0           0           3        0.00 
+                                     PWDATA[23-24]           0           1           0           0           0           0           3       16.66 
+                                        PWDATA[25]           0           0           0           0           0           0           3        0.00 
+                                        PWDATA[26]           0           1           0           0           0           0           3       16.66 
+                                     PWDATA[27-28]           0           0           0           0           0           0           3        0.00 
+                                        PWDATA[29]           0           1           0           0           0           0           3       16.66 
+                                     PWDATA[30-31]           0           0           0           0           0           0           3        0.00 
+                                  audio0_out[0-23]           0           0           0           0           0           0           3        0.00 
+                                  audio1_out[0-23]           0           0           0           0           0           0           3        0.00 
+                                           cfg_out           0           0           0           0           0           0           3        0.00 
+                                 cfg_reg_out[0-31]           0           0           0           0           0           0           3        0.00 
+                                           clr_out           0           0           0           0           0           0           3        0.00 
+                                           irq_out           0           0           0           0           0           0           3        0.00 
+                                         level_out           0           0           0           0           0           0           3        0.00 
+                               level_reg_out[0-31]           0           0           0           0           0           0           3        0.00 
+                                          play_out           0           0           0           0           0           0           3        0.00 
+                                            req_in           0           0           0           0           0           0           3        0.00 
+                                          tick_out           0           0           0           0           0           0           3        0.00 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =        222 
+Toggled Node Count   =         32 
+Untoggled Node Count =        190 
+
+Toggle Coverage      =       6.39% (77 of 1204 bins)
+
+
+Total Coverage By Instance (filtered view): 6.39%
+

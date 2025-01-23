@@ -37,3 +37,7 @@ E audioport connectcheck   1736455120
 S audioport snapshot   1736519872
 S control_unit vsim_rtlsim   1736597692
 E control_unit vsim_rtlsim   1736597703
+S control_unit vsim_rtlsim   1736597725
+E control_unit vsim_rtlsim   1736597735
+S control_unit vsim_rtlsim   1737623530
+E control_unit vsim_rtlsim   1737623621
