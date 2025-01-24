@@ -53,7 +53,8 @@ task address_decoding_test;
    reset_test;
    req_in = '0;
    
-   for (int addr = AUDIOPORT_START_ADDRESS; addr <= AUDIOPORT_END_ADDRESS; addr += 4) begin
+   for (int i = 0; i < AUDIOPORT_REGISTERS; ++i) begin
+      addr = AUDIOPORT_START_ADDRESS + i*4;
       wdata = $urandom;
       apb.write(addr, wdata, wfail);
       apb.read(addr, rdata, rfail);
@@ -106,6 +107,37 @@ endtask
 task fifo_bus_test;
 //////////////////////////////////////////////////////////////////////////////////////
    $info("fifo_bus_test");
+
+   reset_test;
+   req_in = '0;
+
+   for (int i = 0; i < AUDIO_FIFO_SIZE; ++i) begin
+	addr = LEFT_FIFO_ADDRESS;
+	wdata = 0 + i;
+	apb.write(addr, wdata, wfail);
+   end
+
+   for (int i = 0; i < AUDIO_FIFO_SIZE; ++i) begin
+	addr = RIGHT_FIFO_ADDRESS;
+	wdata = 2 + i;
+	apb.write(addr, wdata, wfail);
+   end
+
+   for (int i = 0; i < AUDIO_FIFO_SIZE; ++i) begin
+	addr = LEFT_FIFO_ADDRESS;
+	apb.read(addr, rdata, rfail);
+	ia_fifo_bus_test1: assert (!rfail && rdata == (0 + i)) else 
+         assert_error("ia_fifo_bus_test_1");
+   end
+
+   for (int i = 0; i < AUDIO_FIFO_SIZE; ++i) begin
+	addr = RIGHT_FIFO_ADDRESS;
+	apb.read(addr, rdata, rfail);
+	ia_fifo_bus_test2: assert (!rfail && rdata == (2 + i)) else 
+         assert_error("ia_fifo_bus_test_2");
+   end
+ 
+   update_test_stats;
    
 endtask
 
@@ -120,6 +152,26 @@ endtask
 task cmd_start_stop_test;
 //////////////////////////////////////////////////////////////////////////////////////   
    $info("cmd_start_stop_test");
+
+   reset_test;
+   req_in = '0;
+
+   addr = CMD_REG_ADDRESS;
+   wdata = CMD_START;
+   apb.write(addr, wdata, wfail);
+   ia_start_stop_test1: assert (PLAY_OUT == '1 && STATUS_REG[STATUS_PLAY] == '1) else
+    assert_error("ia_cmd_start_stop_test1");
+
+   repeat(10)
+    @(posedge clk);
+
+   addr = CMD_REG_ADDRESS;
+   wdata = CMD_STOP;
+   apb.write(addr, wdata, wfail);
+   ia_start_stop_test2: assert (PLAY:OUT == '0 && STATUS_REG[STATUS_PLAY] == '0) else
+    assert_error("ia_cmd_start_stop_test2");
+
+   update_test_stats;
 
 endtask
 
@@ -158,6 +210,8 @@ task cmd_clr_test;
 	 assert_error("ia_cmd_clr_test2");
    end
 
+   update_test_stats;
+
 endtask
 
 
@@ -174,7 +228,9 @@ task cmd_cfg_test;
    apb.write(addr, wdata, wfail);
 
    repeat(10)
-	@posedge(clk);
+	@(posedge clk);
+
+   update_test_stats;
 
 endtask
 
@@ -192,7 +248,9 @@ task cmd_level_test;
    apb.write(addr, wdata, wfail);
 
    repeat(10)
-	@posedge(clk);
+	@(posedge clk);
+
+   update_test_stats;
 
 endtask
 
@@ -208,6 +266,46 @@ endtask
 task req_tick_test;
 //////////////////////////////////////////////////////////////////////////////////////   
    $info("req_tick_test");
+
+   reset_test;
+   req_in = '0;
+
+   fork
+	begin : apb_control
+	  addr = CMD_REG_ADDRESS;
+	  wdata = CMD_START;
+	  apb.write(addr, wdata, wfail);
+
+	  repeat(50)
+	    @(posedge clk);
+
+	  addr = CMD_REG_ADDRESS;
+	  wdata = CMD_STOP;
+	  apb.write(addr, wdata, wfail);
+
+	  repeat(50)
+	    @(posedge clk);
+
+	end : apb_control
+
+	begin : req_writer
+	  wait(play_out);
+	    forever
+		begin
+		  repeat(10)
+		    @(posedge clk);
+
+		  req_in = '1;
+		    @(posedge clk);
+		  req_in = '0;
+		  ia_req_tick_test_1: assert ((play_out && tick_out == '1) || (!play_out && tick_out == '0))
+               		else assert_error("ia_req_tick_test_1: tick_out incorrect based on play_out state");
+		end
+	end : req_writer
+   join_any
+   disable fork;
+
+   update_test_stats;
 
 endtask
 
