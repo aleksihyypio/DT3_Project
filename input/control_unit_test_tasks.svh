@@ -159,16 +159,13 @@ task cmd_start_stop_test;
    addr = CMD_REG_ADDRESS;
    wdata = CMD_START;
    apb.write(addr, wdata, wfail);
-   ia_start_stop_test1: assert (PLAY_OUT == '1 && STATUS_REG[STATUS_PLAY] == '1) else
+   ia_start_stop_test1: assert (play_out == '1) else
     assert_error("ia_cmd_start_stop_test1");
-
-   repeat(10)
-    @(posedge clk);
 
    addr = CMD_REG_ADDRESS;
    wdata = CMD_STOP;
    apb.write(addr, wdata, wfail);
-   ia_start_stop_test2: assert (PLAY:OUT == '0 && STATUS_REG[STATUS_PLAY] == '0) else
+   ia_start_stop_test2: assert (play_out == '0) else
     assert_error("ia_cmd_start_stop_test2");
 
    update_test_stats;

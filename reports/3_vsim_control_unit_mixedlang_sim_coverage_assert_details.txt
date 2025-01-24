@@ -6,7 +6,7 @@ Coverage Report by instance with details
 =================================================================================
 
 Assertion Coverage:
-    Assertions                       7         7         0   100.00%
+    Assertions                      11        11         0   100.00%
 --------------------------------------------------------------------------------------------------------------------------------
 Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
                                                   Count        Count    Count      Count      Count       Count  Count          
@@ -23,15 +23,27 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
 /control_unit_tb/TEST/fifo_bus_test/#anonblk#166378660#133#4#/ia_fifo_bus_test2
                      input/control_unit_test_tasks.svh(136)
                                                         0         60          0          0         60          0           0 off
-/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#183#4#/ia_cmd_clr_test_1
-                     input/control_unit_test_tasks.svh(185)
+/control_unit_tb/TEST/cmd_start_stop_test/ia_start_stop_test1
+                     input/control_unit_test_tasks.svh(162)
+                                                        0          1          0          0          1          0           0 off
+/control_unit_tb/TEST/cmd_start_stop_test/ia_start_stop_test2
+                     input/control_unit_test_tasks.svh(168)
+                                                        0          1          0          0          1          0           0 off
+/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#200#4#/ia_cmd_clr_test_1
+                     input/control_unit_test_tasks.svh(202)
                                                         0         60          0          0         60          0           0 off
-/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#183#4#/ia_cmd_clr_test2
-                     input/control_unit_test_tasks.svh(189)
+/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#200#4#/ia_cmd_clr_test2
+                     input/control_unit_test_tasks.svh(206)
                                                         0         60          0          0         60          0           0 off
 /control_unit_tb/TEST/req_tick_test/req_writer/ia_req_tick_test_1
-                     input/control_unit_test_tasks.svh(281)
+                     input/control_unit_test_tasks.svh(298)
                                                         0          9          0          0          9          0           0 off
+/control_unit_tb/TEST/performance_test/host_process/ia_performance_test_1
+                     input/control_unit_test_tasks.svh(377)
+                                                        0     374394          0          0     374394          0           0 off
+/control_unit_tb/TEST/performance_test/audio_out_reader/ia_performance_test_2
+                     input/control_unit_test_tasks.svh(436)
+                                                        0        180          0          0        180          0           0 off
 
 
 ASSERTION RESULTS:
@@ -51,15 +63,27 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
 /control_unit_tb/TEST/fifo_bus_test/#anonblk#166378660#133#4#/ia_fifo_bus_test2
                      input/control_unit_test_tasks.svh(136)
                                                         0         60          0          0         60          0           0 off
-/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#183#4#/ia_cmd_clr_test_1
-                     input/control_unit_test_tasks.svh(185)
+/control_unit_tb/TEST/cmd_start_stop_test/ia_start_stop_test1
+                     input/control_unit_test_tasks.svh(162)
+                                                        0          1          0          0          1          0           0 off
+/control_unit_tb/TEST/cmd_start_stop_test/ia_start_stop_test2
+                     input/control_unit_test_tasks.svh(168)
+                                                        0          1          0          0          1          0           0 off
+/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#200#4#/ia_cmd_clr_test_1
+                     input/control_unit_test_tasks.svh(202)
                                                         0         60          0          0         60          0           0 off
-/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#183#4#/ia_cmd_clr_test2
-                     input/control_unit_test_tasks.svh(189)
+/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#200#4#/ia_cmd_clr_test2
+                     input/control_unit_test_tasks.svh(206)
                                                         0         60          0          0         60          0           0 off
 /control_unit_tb/TEST/req_tick_test/req_writer/ia_req_tick_test_1
-                     input/control_unit_test_tasks.svh(281)
+                     input/control_unit_test_tasks.svh(298)
                                                         0          9          0          0          9          0           0 off
+/control_unit_tb/TEST/performance_test/host_process/ia_performance_test_1
+                     input/control_unit_test_tasks.svh(377)
+                                                        0     374394          0          0     374394          0           0 off
+/control_unit_tb/TEST/performance_test/audio_out_reader/ia_performance_test_2
+                     input/control_unit_test_tasks.svh(436)
+                                                        0        180          0          0        180          0           0 off
 
 Total Coverage By Instance (filtered view): 100.00%
 

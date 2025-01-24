@@ -65,7 +65,7 @@ program control_unit_test
 //		fifo_test;
 //		irq_up_test;
 //		irq_down_test;
-//		performance_test;
+		performance_test;
 
  	   end
 	   begin
