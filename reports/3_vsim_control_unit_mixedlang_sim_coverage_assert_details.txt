@@ -1,6 +1,38 @@
 Coverage Report by instance with details
 
 =================================================================================
+=== Instance: /control_unit_tb/apb
+=== Design Unit: work.apb_if
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      10        10         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/control_unit_tb/apb/psel_valid
+                     input/apb_if.sv(203)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/penable_valid
+                     input/apb_if.sv(204)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/pwrite_valid
+                     input/apb_if.sv(205)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/paddr_valid
+                     input/apb_if.sv(206)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/pwdata_valid
+                     input/apb_if.sv(207)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/pready_valid
+                     input/apb_if.sv(208)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/pslverr_valid
+                     input/apb_if.sv(209)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/psel_to_penable_ok
+                     input/apb_if.sv(216)               0       1418     377393         21     378832          0           1 off
+/control_unit_tb/apb/max_wait_states_ok
+                     input/apb_if.sv(224)               0       1418     377393         21     378832          0           1 off
+/control_unit_tb/apb/penable_deassert_ok
+                     input/apb_if.sv(231)               0       1423     377387         21     378831          0           1 off
+
+=================================================================================
 === Instance: /control_unit_tb/TEST
 === Design Unit: work.control_unit_test
 =================================================================================
@@ -45,12 +77,517 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
                      input/control_unit_test_tasks.svh(436)
                                                         0        180          0          0        180          0           0 off
 
+=================================================================================
+=== Instance: /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE
+=== Design Unit: work.control_unit_svamod
+=================================================================================
+
+Assertion Coverage:
+    Assertions                     160       159         1    99.37%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PSEL
+                     input/control_unit_svamod.sv(78)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PENABLE
+                     input/control_unit_svamod.sv(79)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PWRITE
+                     input/control_unit_svamod.sv(80)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PADDR
+                     input/control_unit_svamod.sv(81)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PWDATA
+                     input/control_unit_svamod.sv(82)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_req_in
+                     input/control_unit_svamod.sv(83)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PRDATA
+                     input/control_unit_svamod.sv(84)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PSLVERR
+                     input/control_unit_svamod.sv(85)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PREADY
+                     input/control_unit_svamod.sv(86)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_irq_out
+                     input/control_unit_svamod.sv(87)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_cfg_reg_out
+                     input/control_unit_svamod.sv(88)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_level_reg_out
+                     input/control_unit_svamod.sv(89)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_dsp_regs_out
+                     input/control_unit_svamod.sv(90)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_cfg_out
+                     input/control_unit_svamod.sv(91)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_clr_out
+                     input/control_unit_svamod.sv(92)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_level_out
+                     input/control_unit_svamod.sv(93)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_tick_out
+                     input/control_unit_svamod.sv(94)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_audio0_out
+                     input/control_unit_svamod.sv(95)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_audio1_out
+                     input/control_unit_svamod.sv(96)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_play_out
+                     input/control_unit_svamod.sv(97)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_reset
+                     input/apb_assumes.svh(10)          0         42     757622          0     757664          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_psel_1
+                     input/apb_assumes.svh(22)          0       2836     375975         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_psel_0
+                     input/apb_assumes.svh(35)          0     375975       2836         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_psel_before_penable
+                     input/apb_assumes.svh(47)          0       1418     377393         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_penable_fall
+                     input/apb_assumes.svh(58)          0       1423     377387         21     378831          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_penable_hold
+                     input/apb_assumes.svh(69)          0          0     378811         21     378832          0           0 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_bus_hold
+                     input/apb_assumes.svh(80)          0       1418     377393         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_apb_access
+                     input/apb_assumes.svh(101)
+                                                        0       1417     377393         21     378831          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_paddr_align
+                     input/apb_assumes.svh(112)
+                                                        0       2836     375975         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_req_in_pulse
+                     input/control_unit_svamod.sv(144)
+                                                        0        189     378622         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_req_in_first
+                     input/control_unit_svamod.sv(156)
+                                                        0          3     378808         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_pready_on
+                     input/control_unit_svamod.sv(166)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_pslverr_off
+                     input/control_unit_svamod.sv(176)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_prdata_off
+                     input/control_unit_svamod.sv(186)
+                                                        0     375975       2836         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_clr_out_pulse
+                     input/control_unit_svamod.sv(196)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_clr_out_valid_high
+                     input/control_unit_svamod.sv(206)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_cfg_out_pulse
+                     input/control_unit_svamod.sv(216)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_cfg_out_valid_high
+                     input/control_unit_svamod.sv(226)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_start_play
+                     input/control_unit_svamod.sv(236)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_valid_start_play
+                     input/control_unit_svamod.sv(246)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_stop_play
+                     input/control_unit_svamod.sv(256)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_valid_stop_play
+                     input/control_unit_svamod.sv(266)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_level_out_pulse
+                     input/control_unit_svamod.sv(276)
+                                                        0          1     378810         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_level_out_valid_high
+                     input/control_unit_svamod.sv(286)
+                                                        0          1     378810         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_tick_standby
+                     input/control_unit_svamod.sv(296)
+                                                        0       3256     375545         31     378832          0           2 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_tick_out_high
+                     input/control_unit_svamod.sv(306)
+                                                        0        184     378627         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_tick_out_low
+                     input/control_unit_svamod.sv(316)
+                                                        0     378627        184         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_fifo_drain
+                     input/control_unit_svamod.sv(330)
+                                                        0          3     378804         25     378832          0          60 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_irq_out_rise_first
+                     input/control_unit_svamod.sv(340)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_irq_out_high
+                     input/control_unit_svamod.sv(352)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_irq_out_standby
+                     input/control_unit_svamod.sv(362)
+                                                        0       3266     375545         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_irq_out_down
+                     input/control_unit_svamod.sv(372)
+                                                        0          5     378805         21     378831          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_cfg_reg_drv
+                     input/control_unit_svamod.sv(382)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_level_reg_drv
+                     input/control_unit_svamod.sv(392)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[105]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[104]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[103]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[102]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[101]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[100]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[99]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[98]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[97]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[96]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[95]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[94]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[93]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[92]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[91]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[90]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[89]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[88]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[87]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[86]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[85]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[84]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[83]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[82]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[81]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[80]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[79]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[78]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[77]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[76]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[75]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[74]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[73]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[72]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[71]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[70]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[69]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[68]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[67]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[66]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[65]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[64]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[63]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[62]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[61]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[60]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[59]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[58]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[57]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[56]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[55]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[54]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[53]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[52]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[51]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[50]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[49]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[48]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[47]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[46]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[45]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[44]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[43]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[42]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[41]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[40]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[39]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[38]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[37]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[36]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[35]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[34]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[33]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[32]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[31]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[30]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[29]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[28]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[27]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[26]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[25]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[24]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[23]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[22]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[21]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[20]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[19]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[18]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[17]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[16]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[15]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[14]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[13]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[12]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[11]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[10]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[9]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[8]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[7]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[6]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[5]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[4]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[3]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[2]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[1]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[0]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+
 
 ASSERTION RESULTS:
 --------------------------------------------------------------------------------------------------------------------------------
 Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
                                                   Count        Count    Count      Count      Count       Count  Count          
 --------------------------------------------------------------------------------------------------------------------------------
+/control_unit_tb/apb/psel_valid
+                     input/apb_if.sv(203)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/penable_valid
+                     input/apb_if.sv(204)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/pwrite_valid
+                     input/apb_if.sv(205)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/paddr_valid
+                     input/apb_if.sv(206)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/pwdata_valid
+                     input/apb_if.sv(207)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/pready_valid
+                     input/apb_if.sv(208)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/pslverr_valid
+                     input/apb_if.sv(209)               0     378832          0          0     378832          0           1 off
+/control_unit_tb/apb/psel_to_penable_ok
+                     input/apb_if.sv(216)               0       1418     377393         21     378832          0           1 off
+/control_unit_tb/apb/max_wait_states_ok
+                     input/apb_if.sv(224)               0       1418     377393         21     378832          0           1 off
+/control_unit_tb/apb/penable_deassert_ok
+                     input/apb_if.sv(231)               0       1423     377387         21     378831          0           1 off
 /control_unit_tb/TEST/apb_test/ia_apb_test1
                      input/control_unit_test_tasks.svh(31)
                                                         0          1          0          0          1          0           0 off
@@ -84,6 +621,479 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
 /control_unit_tb/TEST/performance_test/audio_out_reader/ia_performance_test_2
                      input/control_unit_test_tasks.svh(436)
                                                         0        180          0          0        180          0           0 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PSEL
+                     input/control_unit_svamod.sv(78)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PENABLE
+                     input/control_unit_svamod.sv(79)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PWRITE
+                     input/control_unit_svamod.sv(80)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PADDR
+                     input/control_unit_svamod.sv(81)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PWDATA
+                     input/control_unit_svamod.sv(82)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_req_in
+                     input/control_unit_svamod.sv(83)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PRDATA
+                     input/control_unit_svamod.sv(84)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PSLVERR
+                     input/control_unit_svamod.sv(85)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_PREADY
+                     input/control_unit_svamod.sv(86)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_irq_out
+                     input/control_unit_svamod.sv(87)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_cfg_reg_out
+                     input/control_unit_svamod.sv(88)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_level_reg_out
+                     input/control_unit_svamod.sv(89)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_dsp_regs_out
+                     input/control_unit_svamod.sv(90)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_cfg_out
+                     input/control_unit_svamod.sv(91)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_clr_out
+                     input/control_unit_svamod.sv(92)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_level_out
+                     input/control_unit_svamod.sv(93)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_tick_out
+                     input/control_unit_svamod.sv(94)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_audio0_out
+                     input/control_unit_svamod.sv(95)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_audio1_out
+                     input/control_unit_svamod.sv(96)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_play_out
+                     input/control_unit_svamod.sv(97)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_reset
+                     input/apb_assumes.svh(10)          0         42     757622          0     757664          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_psel_1
+                     input/apb_assumes.svh(22)          0       2836     375975         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_psel_0
+                     input/apb_assumes.svh(35)          0     375975       2836         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_psel_before_penable
+                     input/apb_assumes.svh(47)          0       1418     377393         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_penable_fall
+                     input/apb_assumes.svh(58)          0       1423     377387         21     378831          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_penable_hold
+                     input/apb_assumes.svh(69)          0          0     378811         21     378832          0           0 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_bus_hold
+                     input/apb_assumes.svh(80)          0       1418     377393         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_apb_access
+                     input/apb_assumes.svh(101)
+                                                        0       1417     377393         21     378831          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_paddr_align
+                     input/apb_assumes.svh(112)
+                                                        0       2836     375975         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_req_in_pulse
+                     input/control_unit_svamod.sv(144)
+                                                        0        189     378622         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_req_in_first
+                     input/control_unit_svamod.sv(156)
+                                                        0          3     378808         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_pready_on
+                     input/control_unit_svamod.sv(166)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_pslverr_off
+                     input/control_unit_svamod.sv(176)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_prdata_off
+                     input/control_unit_svamod.sv(186)
+                                                        0     375975       2836         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_clr_out_pulse
+                     input/control_unit_svamod.sv(196)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_clr_out_valid_high
+                     input/control_unit_svamod.sv(206)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_cfg_out_pulse
+                     input/control_unit_svamod.sv(216)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_cfg_out_valid_high
+                     input/control_unit_svamod.sv(226)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_start_play
+                     input/control_unit_svamod.sv(236)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_valid_start_play
+                     input/control_unit_svamod.sv(246)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_stop_play
+                     input/control_unit_svamod.sv(256)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_valid_stop_play
+                     input/control_unit_svamod.sv(266)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_level_out_pulse
+                     input/control_unit_svamod.sv(276)
+                                                        0          1     378810         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_level_out_valid_high
+                     input/control_unit_svamod.sv(286)
+                                                        0          1     378810         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_tick_standby
+                     input/control_unit_svamod.sv(296)
+                                                        0       3256     375545         31     378832          0           2 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_tick_out_high
+                     input/control_unit_svamod.sv(306)
+                                                        0        184     378627         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_tick_out_low
+                     input/control_unit_svamod.sv(316)
+                                                        0     378627        184         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_fifo_drain
+                     input/control_unit_svamod.sv(330)
+                                                        0          3     378804         25     378832          0          60 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_irq_out_rise_first
+                     input/control_unit_svamod.sv(340)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_irq_out_high
+                     input/control_unit_svamod.sv(352)
+                                                        0     378811          0         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_irq_out_standby
+                     input/control_unit_svamod.sv(362)
+                                                        0       3266     375545         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_irq_out_down
+                     input/control_unit_svamod.sv(372)
+                                                        0          5     378805         21     378831          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_cfg_reg_drv
+                     input/control_unit_svamod.sv(382)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_level_reg_drv
+                     input/control_unit_svamod.sv(392)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[105]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[104]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[103]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[102]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[101]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[100]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[99]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[98]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[97]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[96]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[95]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[94]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[93]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[92]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[91]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[90]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[89]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[88]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[87]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[86]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[85]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[84]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[83]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[82]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[81]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[80]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[79]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[78]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[77]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[76]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[75]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[74]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[73]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[72]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[71]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[70]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[69]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[68]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[67]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[66]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[65]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[64]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[63]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[62]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[61]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[60]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[59]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[58]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[57]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[56]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[55]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[54]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[53]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[52]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[51]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[50]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[49]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[48]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[47]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[46]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[45]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[44]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[43]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[42]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[41]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[40]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[39]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[38]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[37]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[36]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[35]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[34]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[33]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[32]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[31]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[30]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[29]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[28]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[27]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[26]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[25]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[24]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[23]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[22]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[21]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[20]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[19]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[18]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[17]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[16]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[15]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[14]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[13]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[12]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[11]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[10]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[9]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[8]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[7]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[6]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[5]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[4]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[3]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[2]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[1]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[0]/af_dsp_regs_drv
+                     input/control_unit_svamod.sv(403)
+                                                        0          2     378809         21     378832          0           1 off
 
-Total Coverage By Instance (filtered view): 100.00%
+Total Coverage By Instance (filtered view): 99.44%
 

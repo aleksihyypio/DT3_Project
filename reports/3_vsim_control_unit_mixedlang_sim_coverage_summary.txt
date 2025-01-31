@@ -1,0 +1,18 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE
+=== Design Unit: work.control_unit_svamod
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                     160       159         1    99.37%
+    Directives                     129       129         0   100.00%
+
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 129
+
+TOTAL ASSERTION COVERAGE: 99.37%  ASSERTIONS: 160
+
+Total Coverage By Instance (filtered view): 99.68%
+

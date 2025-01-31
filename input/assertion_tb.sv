@@ -31,111 +31,44 @@ module assertion_tb;
    logic [31:0] PADDR;
    logic [31:0] PWDATA;
    logic 	PREADY;
-   logic [31:0] cfg_reg_out;
+   logic [23:0] audio0_out;
+   logic [23:0] audio1_out;
+   logic	tick_out;
    
    ///////////////////////////////////////////////////////////////////
-   // Test data generation process 
+   // Test data generation process for DSP registers
    ///////////////////////////////////////////////////////////////////
-
-   initial 
-     begin
-
-	$info("a_cfg_reg_write OK");
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	PADDR = CFG_REG_ADDRESS;
-	PWDATA = $urandom;
-	cfg_reg_out = '0;
-	@(negedge clk);
-	
-	PSEL = '1;
-	PWRITE = '1;
-	PREADY = '1;
-	@(negedge clk);
-	
-	PENABLE = '1;
-	@(negedge clk);
-	
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	cfg_reg_out = PWDATA;
-	@(negedge clk);
-
-	#1us;
-	
-	$info("a_cfg_reg_write FAIL1");
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	PADDR = CFG_REG_ADDRESS;
-	PWDATA = $urandom;
-	@(negedge clk); 
-
-	PSEL = '1;
-	PWRITE = '1;
-	PREADY = '1;
-	@(negedge clk); 	
-
-	PENABLE = '1;
-	@(negedge clk); 	
-
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	@(negedge clk); 
-
-	cfg_reg_out = PWDATA; // One cycle too late	
-	@(negedge clk);
-
-	#1us;
-	
-	$info("a_cfg_reg_write FAIL2");
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	PADDR = CFG_REG_ADDRESS;
-	PWDATA = $urandom;
-	@(negedge clk);
-	
-	PSEL = '1;
-	PWRITE = '1;
-	PREADY = '1;
-	@(negedge clk);
-	
-	PENABLE = '1;	
-       @(negedge clk); 	
-
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	cfg_reg_out = PWDATA ^ 32'h00000001; // Wrong data
-	@(negedge clk);
-
-	#1us;
-	
-	$finish;
-	
-     end 
    
-   ///////////////////////////////////////////////////////////////////
-   // Properties and assertions
-   ///////////////////////////////////////////////////////////////////
+   initial begin
+    // Case 1: Proper FIFO drain
+     tick_out = 1;
+     @(negedge clk);
+     tick_out = 0;
+     audio0_out = 0;
+     audio1_out = 0;
+     @(negedge clk);
+     // Case 2: Improper FIFO drain (should fail)
+     tick_out = 1;
+     @(negedge clk);
+     audio0_out = $random;
+     audio1_out = $random;
+     @(negedge clk);
+     // End simulation
+     $finish;
+   end
 
-   property cfg_reg_write;
-      @(posedge clk) disable iff (rst_n == '0)
-        PSEL && PENABLE && PREADY && PWRITE && (PADDR == CFG_REG_ADDRESS) |=> cfg_reg_out == $past(PWDATA);
+   ///////////////////////////////////////////////////////////////////
+   // Generate block for assertions
+   ///////////////////////////////////////////////////////////////////
+   
+   // fifo_reading : f_fifo_drain
+
+   property f_fifo_drain;
+     @(posedge clk) disable iff (rst_n == '0)
+       $rose(tick_out) |-> ##[1:$] 
+       (!(PSEL && PENABLE && PWRITE && ((PADDR == LEFT_FIFO_ADDRESS) || (PADDR == RIGHT_FIFO_ADDRESS)))) ##[1:AUDIO_FIFO_SIZE] 
+       (audio0_out == '0 && audio1_out == '0);
    endproperty
-      
-   a_cfg_reg_write: assert property(cfg_reg_write)
-     else $error("cfg_reg_out value differs from value written to CFG_REG");
-   c_cfg_reg_write: cover property(cfg_reg_write);
+
 
 endmodule 

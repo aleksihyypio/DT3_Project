@@ -137,13 +137,11 @@ module control_unit_svamod
 
    // req_in_pulse : f_req_in_pulse
    property f_req_in_pulse;
-   @(posedge clk ) disable iff (rst_n == '0)
-     $rose(req_in) |=> $fell(req_in);
-endproperty
+      @(posedge clk ) disable iff (rst_n == '0)
+	$rose(req_in) |=> $fell(req_in);
+   endproperty
 
    mf_req_in_pulse: assume property(f_req_in_pulse) else assert_error("mf_req_in_pulse");
-
-
 
    // Black box (functional assertions)
    
@@ -152,7 +150,7 @@ endproperty
 
    property f_req_in_first;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	 $rose(play_out) |=> (!req_in && !req_in[*1]);
    endproperty
 
    mf_req_in_first: assume property(f_req_in_first) else assert_error("mf_req_in_first");
@@ -162,7 +160,7 @@ endproperty
 
    property f_pready_on;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	PREADY;
    endproperty
 
    af_pready_on: assert property(f_pready_on) else assert_error("af_pready_on");
@@ -172,7 +170,7 @@ endproperty
 
    property f_pslverr_off;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(!PSLVERR);
    endproperty
 
    af_pslverr_off: assert property(f_pslverr_off) else assert_error("af_pslverr_off");
@@ -182,7 +180,7 @@ endproperty
 
    property f_prdata_off;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(!PSEL) |-> (!PRDATA);
    endproperty
 
    af_prdata_off: assert property(f_prdata_off) else assert_error("af_prdata_off");
@@ -272,7 +270,7 @@ endproperty
 
    property f_level_out_pulse;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(PSEL && PENABLE && PREADY && PWRITE && (PADDR == CMD_REG_ADDRESS) && (PWDATA == CMD_LEVEL)) |-> $rose(level_out) ##1 $fell(level_out);
    endproperty
 
    af_level_out_pulse: assert property(f_level_out_pulse) else assert_error("af_level_out_pulse");
@@ -282,7 +280,7 @@ endproperty
 
    property f_level_out_valid_high;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	level_out |-> (PSEL && PENABLE && PREADY && PWRITE && (PADDR == CMD_REG_ADDRESS) && (PWDATA == CMD_LEVEL));
    endproperty
 
    af_level_out_valid_high: assert property(f_level_out_valid_high) else assert_error("af_level_out_valid_high");
@@ -292,7 +290,7 @@ endproperty
 
    property f_tick_standby;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(!play_out) |=> (!tick_out);
    endproperty
 
    af_tick_standby: assert property(f_tick_standby) else assert_error("af_tick_standby");
@@ -302,7 +300,7 @@ endproperty
 
    property f_tick_out_high;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(play_out && req_in) ##1 play_out |-> tick_out;
    endproperty
 
    af_tick_out_high: assert property(f_tick_out_high) else assert_error("af_tick_out_high");
@@ -312,7 +310,7 @@ endproperty
 
    property f_tick_out_low;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(!play_out || ($past(!play_out) || $past(!req_in))) |-> (!tick_out)
    endproperty
 
    af_tick_out_low: assert property(f_tick_out_low) else assert_error("af_tick_out_low");
@@ -323,10 +321,11 @@ endproperty
    // fifo_reading : f_fifo_drain
 
    property f_fifo_drain;
-      @(posedge clk ) disable iff (rst_n == '0)
-	1;
+    @(posedge clk) disable iff (rst_n == 0)
+     $rose(tick_out) ##1 (!(PWRITE && (PADDR == LEFT_FIFO_ADDRESS || PADDR == RIGHT_FIFO_ADDRESS))) throughout tick_out [-> (AUDIO_FIFO_SIZE - 1)]
+     |=> (audio0_out == '0 && audio1_out == '0)
    endproperty
-
+   
    af_fifo_drain: assert property(f_fifo_drain) else assert_error("af_fifo_drain");
    cf_fifo_drain: cover property(f_fifo_drain);
 
@@ -356,7 +355,7 @@ endproperty
 
    property f_irq_out_standby;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(!play_out) |-> (!irq_out);
    endproperty
 
    af_irq_out_standby: assert property(f_irq_out_standby) else assert_error("af_irq_out_standby");
@@ -366,7 +365,7 @@ endproperty
 
    property f_irq_out_down;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(PSEL && PENABLE && PREADY && PWRITE && (PADDR == CMD_REG_ADDRESS) && ((PWDATA == CMD_IRQACK) || (PWDATA == CMD_STOP))) |=> (!irq_out);
    endproperty
 
    af_irq_out_down: assert property(f_irq_out_down) else assert_error("af_irq_out_down");
@@ -376,7 +375,7 @@ endproperty
 
    property f_cfg_reg_drv;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(PSEL && PENABLE && PREADY && PWRITE && (PADDR == CFG_REG_ADDRESS)) |=> (cfg_reg_out == $past(PWDATA));
    endproperty
 
    af_cfg_reg_drv: assert property(f_cfg_reg_drv) else assert_error("af_cfg_reg_drv");
@@ -386,22 +385,24 @@ endproperty
 
    property f_level_reg_drv;
       @(posedge clk ) disable iff (rst_n == '0)
-	1;
+	(PSEL && PENABLE && PREADY && PWRITE && (PADDR == LEVEL_REG_ADDRESS)) |=> (level_reg_out == $past(PWDATA));
    endproperty
 
    af_level_reg_drv: assert property(f_level_reg_drv) else assert_error("af_level_reg_drv");
    cf_level_reg_drv: cover property(f_level_reg_drv);
-
-   // dsp_regs_out_conn : f_dsp_regs_drv
-
-   property f_dsp_regs_drv;
-      @(posedge clk ) disable iff (rst_n == '0)
-	1;
-   endproperty
-
-   af_dsp_regs_drv: assert property(f_dsp_regs_drv) else assert_error("af_dsp_regs_drv");
-   cf_dsp_regs_drv: cover property(f_dsp_regs_drv);
-
+   
+   // dsp_regs_out_driving : f_dsp_regs_drv
+   generate
+	for (genvar i = 0; i <= DSP_REGISTERS-1; ++i) 
+	begin
+   	   property f_dsp_regs_drv;
+	    @(posedge clk ) disable iff (rst_n == '0)
+	      (PSEL && PENABLE && PREADY && PWRITE && (PADDR == DSP_REGS_START_ADDRESS + 4*i)) |=> (dsp_regs_out[32*(i+1)-1 : 32*i] == $past(PWDATA));
+   	   endproperty
+	 af_dsp_regs_drv: assert property(f_dsp_regs_drv) else assert_error("af_dsp_regs_drv");
+	 cf_dsp_regs_drv: cover property(f_dsp_regs_drv);
+	end
+   endgenerate
 
    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    // 3. Whitebox (RTL) assertions

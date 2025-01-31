@@ -35,26 +35,26 @@
 # -assertdebug -msgmode both -classdebug -uvmcontrol=all -debugDB=output/control_unit_rtl.dbg -sclib output/control_unit_questasim_work -L output/control_unit_questasim_work
 # 1
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:03:59 on Jan 24,2025
+# Start time: 09:35:43 on Jan 31,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/apb_pkg.sv 
 # -- Compiling package apb_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:04:00 on Jan 24,2025, Elapsed time: 0:00:01
+# End time: 09:35:44 on Jan 31,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:04:00 on Jan 24,2025
+# Start time: 09:35:44 on Jan 31,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/audioport_pkg.sv 
 # -- Compiling package audioport_pkg
 # -- Importing package apb_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:04:00 on Jan 24,2025, Elapsed time: 0:00:00
+# End time: 09:35:44 on Jan 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:04:00 on Jan 24,2025
+# Start time: 09:35:44 on Jan 31,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/audioport_util_pkg.sv 
 # -- Compiling package audioport_util_pkg
 # -- Importing package apb_pkg
@@ -62,10 +62,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:04:00 on Jan 24,2025, Elapsed time: 0:00:00
+# End time: 09:35:44 on Jan 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:04:00 on Jan 24,2025
+# Start time: 09:35:44 on Jan 31,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/control_unit_svamod.sv 
 # -- Compiling package control_unit_svamod_sv_unit
 # -- Importing package audioport_pkg
@@ -75,10 +75,10 @@
 # 
 # Top level modules:
 # 	control_unit_svamod
-# End time: 15:04:00 on Jan 24,2025, Elapsed time: 0:00:00
+# End time: 09:35:44 on Jan 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:04:00 on Jan 24,2025
+# Start time: 09:35:44 on Jan 31,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/apb_if.sv 
 # -- Compiling package apb_if_sv_unit
 # -- Importing package audioport_pkg
@@ -87,10 +87,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:04:00 on Jan 24,2025, Elapsed time: 0:00:00
+# End time: 09:35:44 on Jan 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:04:00 on Jan 24,2025
+# Start time: 09:35:44 on Jan 31,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/irq_out_if.sv 
 # -- Compiling package irq_out_if_sv_unit
 # -- Importing package audioport_pkg
@@ -99,10 +99,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:04:00 on Jan 24,2025, Elapsed time: 0:00:00
+# End time: 09:35:44 on Jan 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:04:00 on Jan 24,2025
+# Start time: 09:35:44 on Jan 31,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/control_unit_test.sv 
 # -- Compiling package control_unit_test_sv_unit
 # -- Importing package audioport_pkg
@@ -112,10 +112,10 @@
 # 
 # Top level modules:
 # 	control_unit_test
-# End time: 15:04:01 on Jan 24,2025, Elapsed time: 0:00:01
+# End time: 09:35:44 on Jan 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:04:01 on Jan 24,2025
+# Start time: 09:35:44 on Jan 31,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/control_unit_tb.sv 
 # -- Compiling package control_unit_tb_sv_unit
 # -- Importing package apb_pkg
@@ -125,26 +125,26 @@
 # 
 # Top level modules:
 # 	control_unit_tb
-# End time: 15:04:01 on Jan 24,2025, Elapsed time: 0:00:00
+# End time: 09:35:45 on Jan 31,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # sccom -reportprogress -verbose -g -I input -work output/control_unit_questasim_work -verbose input/control_unit.cpp 
-# Start time: 15:04:01 on Jan 24,2025
+# Start time: 09:35:45 on Jan 31,2025
 # 
 # QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
 # 
 # -- Compiling module control_unit
 # Exported modules:
 # 	control_unit
-# End time: 15:04:04 on Jan 24,2025, Elapsed time: 0:00:03
+# End time: 09:35:48 on Jan 31,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # sccom -reportprogress -g -I input -work output/control_unit_questasim_work -verbose -link 
-# Start time: 15:04:04 on Jan 24,2025
+# Start time: 09:35:48 on Jan 31,2025
 # 
 # QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
-# End time: 15:04:07 on Jan 24,2025, Elapsed time: 0:00:03
+# End time: 09:35:50 on Jan 31,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vopt 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:04:07 on Jan 24,2025
+# Start time: 09:35:51 on Jan 31,2025
 # vopt -reportprogress 300 "+acc" -suppress 10587 -debugdb -noincr -sclib output/control_unit_questasim_work -L output/control_unit_questasim_work work.control_unit_tb -o control_unit_rtl_vopt 
 # 
 # Top level modules:
@@ -157,7 +157,8 @@
 # -- Loading program control_unit_test
 # -- Loading shared library /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/output/control_unit_questasim_work/_sc/linux_x86_64_gcc-10.3.0/systemc.so
 # -- Loading systemc module /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/output/control_unit_questasim_work.control_unit
-# Optimizing 13 design-units (inlining 0/4 module instances, 0/1 systemc instances):
+# -- Loading module control_unit_svamod
+# Optimizing 15 design-units (inlining 0/5 module instances, 0/1 systemc instances):
 # -- Optimizing package apb_pkg(fast)
 # -- Optimizing package audioport_pkg(fast)
 # -- Optimizing package audioport_util_pkg(fast)
@@ -165,6 +166,9 @@
 # -- Optimizing package apb_if_sv_unit(fast)
 # -- Optimizing package irq_out_if_sv_unit(fast)
 # -- Optimizing package control_unit_test_sv_unit(fast)
+# -- Optimizing package control_unit_svamod_sv_unit(fast)
+# -- Optimizing module control_unit_svamod(fast)
+# -- Processing module control_unit_svamod(fast) for debug
 # -- Optimizing program control_unit_test(fast)
 # -- Optimizing interface apb_if(fast__1)
 # -- Optimizing module control_unit_tb(fast)
@@ -173,10 +177,10 @@
 # -- Optimizing interface irq_out_if(fast)
 # -- Optimizing interface apb_if(fast)
 # Optimized design name is control_unit_rtl_vopt
-# End time: 15:04:08 on Jan 24,2025, Elapsed time: 0:00:01
+# End time: 09:35:52 on Jan 31,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0, Suppressed Warnings: 1
 # vsim control_unit_rtl_vopt -assertdebug -msgmode both -classdebug -uvmcontrol=all -debugDB=output/control_unit_rtl.dbg -sclib output/control_unit_questasim_work -L output/control_unit_questasim_work 
-# Start time: 15:04:08 on Jan 24,2025
+# Start time: 09:35:52 on Jan 31,2025
 # Loading sv_std.std
 # Loading work.apb_pkg(fast)
 # Loading work.audioport_pkg(fast)
@@ -191,6 +195,8 @@
 # Loading work.control_unit_test(fast)
 # Loading /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/output/control_unit_questasim_work/_sc/linux_x86_64_gcc-10.3.0/systemc.so
 # Loading /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/output/control_unit_questasim_work.control_unit
+# Loading work.control_unit_svamod_sv_unit(fast)
+# Loading work.control_unit_svamod(fast)
 # ** Note: (vsim-8900) Creating design debug database output/control_unit_rtl.dbg.
 # sim_coverage
 # ** Info: apb_test
@@ -220,11 +226,8 @@
 #    Time: 3788315 ns  Iteration: 3  Instance: /control_unit_tb/TEST
 # 1
 # Break in Module control_unit_test at input/control_unit_test.sv line 84
-# ** Note: (vsim-17388) No matching coverage data found.
-# ** Note: (vsim-17388) No matching coverage data found.
-# ** Note: (vsim-17388) No matching coverage data found.
 # .main_pane.msgviewer.interior.cs.body.tree
 quit
 # Saving coverage database on exit...
-# End time: 15:11:57 on Jan 24,2025, Elapsed time: 0:07:49
+# End time: 13:13:17 on Jan 31,2025, Elapsed time: 3:37:25
 # Errors: 0, Warnings: 0

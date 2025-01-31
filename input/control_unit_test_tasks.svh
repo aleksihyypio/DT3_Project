@@ -296,7 +296,7 @@ task req_tick_test;
 		    @(posedge clk);
 		  req_in = '0;
 		  ia_req_tick_test_1: assert ((play_out && tick_out == '1) || (!play_out && tick_out == '0))
-               		else assert_error("ia_req_tick_test_1: tick_out incorrect based on play_out state");
+               		else assert_error("ia_req_tick_test_1");
 		end
 	end : req_writer
    join_any
