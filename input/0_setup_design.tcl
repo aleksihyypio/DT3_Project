@@ -135,7 +135,7 @@ set RTL_POWER_ESTIMATION      1
 ###################################################################
 
 # Enable/disable schematic generator
-set VSIM_SCHEMATIC 1
+set VSIM_SCHEMATIC 0
 
 # XML testplan file location
 if { [file exists input/${DESIGN_NAME}_testplan.xml ] == 1} {

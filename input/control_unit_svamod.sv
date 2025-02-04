@@ -310,7 +310,7 @@ module control_unit_svamod
 
    property f_tick_out_low;
       @(posedge clk ) disable iff (rst_n == '0)
-	(!play_out || ($past(!play_out) || $past(!req_in))) |-> (!tick_out)
+	(!play_out || ($past(!play_out) || $past(!req_in))) |-> (!tick_out);
    endproperty
 
    af_tick_out_low: assert property(f_tick_out_low) else assert_error("af_tick_out_low");
@@ -323,7 +323,7 @@ module control_unit_svamod
    property f_fifo_drain;
     @(posedge clk) disable iff (rst_n == 0)
      $rose(tick_out) ##1 (!(PWRITE && (PADDR == LEFT_FIFO_ADDRESS || PADDR == RIGHT_FIFO_ADDRESS))) throughout tick_out [-> (AUDIO_FIFO_SIZE - 1)]
-     |=> (audio0_out == '0 && audio1_out == '0)
+     |=> (audio0_out == '0 && audio1_out == '0);
    endproperty
    
    af_fifo_drain: assert property(f_fifo_drain) else assert_error("af_fifo_drain");

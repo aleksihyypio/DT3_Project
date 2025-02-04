@@ -1,0 +1,1203 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /control_unit_tb/apb
+=== Design Unit: work.apb_if
+=================================================================================
+
+Directive Coverage:
+    Directives                       2         2         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/control_unit_tb/apb/psel_to_penable_cov apb_if Verilog  SVA  input/apb_if.sv(217)
+                                                                              1418 Covered   
+/control_unit_tb/apb/penable_deassert_cov 
+                                         apb_if Verilog  SVA  input/apb_if.sv(232)
+                                                                              1423 Covered   
+
+=================================================================================
+=== Instance: /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE
+=== Design Unit: work.control_unit_svamod
+=================================================================================
+
+Directive Coverage:
+    Directives                     192       191         1    99.47%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_pready_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(167)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_pslverr_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(177)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_prdata_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(187)
+                                                                              375975 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_clr_out_pulse 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(197)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_clr_out_valid_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(207)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_cfg_out_pulse 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(217)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_cfg_out_valid_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(227)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_start_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(237)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_valid_start_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(247)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_stop_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(257)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_valid_stop_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(267)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_level_out_pulse 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(277)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_level_out_valid_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(287)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_standby 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(297)
+                                                                              3256 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_out_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(307)
+                                                                               184 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_out_low 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(317)
+                                                                              378627 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_fifo_drain 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(330)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_irq_out_rise_first 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(340)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_irq_out_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(352)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_irq_out_standby 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(362)
+                                                                              3266 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_irq_out_down 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(372)
+                                                                                 5 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_cfg_reg_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(382)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_level_reg_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(392)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_pslverr 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(9)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_pready 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(19)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rindex_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(29)
+                                                                              2836 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rindex_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(39)
+                                                                              375975 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_index_range 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(49)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(59)
+                                                                               232 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_status_reg_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(69)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_status_reg_standby 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(79)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(89)
+                                                                              378568 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_reg_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(99)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_reg_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(109)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_dsp_regs_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(119)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(129)
+                                                                               361 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_failed_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(139)
+                                                                                 0 ZERO      
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(149)
+                                                                              378438 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_inc 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(159)
+                                                                               355 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_loop 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(169)
+                                                                                 6 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(179)
+                                                                              378438 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(189)
+                                                                                 6 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_off_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(199)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_off_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(209)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(219)
+                                                                              378197 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_inc_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(229)
+                                                                                60 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_inc_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(239)
+                                                                               177 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_loop_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(249)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_loop_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(259)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(270)
+                                                                              378558 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lempty_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(280)
+                                                                              2434 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lempty_of 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(290)
+                                                                              376377 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfull_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(300)
+                                                                              5556 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfull_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(310)
+                                                                              373255 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfifo_output_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(320)
+                                                                              376377 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfifo_output_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(330)
+                                                                              2434 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_rbank 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(340)
+                                                                               908 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_lfifo 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(350)
+                                                                               964 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_rfifo 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(360)
+                                                                               964 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(370)
+                                                                              375975 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_rise 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(380)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_fall 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(390)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(400)
+                                                                              378795 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_out_state 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(410)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(420)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(430)
+                                                                              378810 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(440)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_out_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(450)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_out_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(460)
+                                                                              378810 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_start_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(470)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_start_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(480)
+                                                                              378808 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_stop_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(490)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_stop_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(500)
+                                                                              378808 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_out_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(510)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_out_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(520)
+                                                                              378810 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irqack_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(530)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irqack_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(540)
+                                                                              378808 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_tick_out_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(550)
+                                                                              3266 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_tick_out_of 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(560)
+                                                                              375545 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_req_r_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(570)
+                                                                              375544 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_req_r_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(580)
+                                                                              3256 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_rise 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(590)
+                                                                                69 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_fall_stop 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(600)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_fall_irqack 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(610)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(620)
+                                                                              378726 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(630)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[105]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[104]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[103]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[102]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[101]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[100]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[99]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[98]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[97]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[96]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[95]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[94]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[93]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[92]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[91]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[90]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[89]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[88]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[87]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[86]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[85]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[84]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[83]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[82]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[81]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[80]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[79]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[78]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[77]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[76]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[75]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[74]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[73]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[72]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[71]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[70]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[69]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[68]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[67]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[66]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[65]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[64]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[63]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[62]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[61]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[60]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[59]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[58]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[57]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[56]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[55]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[54]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[53]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[52]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[51]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[50]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[49]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[48]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[47]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[46]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[45]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[44]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[43]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[42]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[41]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[40]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[39]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[38]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[37]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[36]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[35]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[34]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[33]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[32]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[31]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[30]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[29]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[28]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[27]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[26]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[25]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[24]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[23]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[22]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[21]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[20]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[19]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[18]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[17]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[16]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[15]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[14]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[13]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[12]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[11]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[10]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[9]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[8]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[7]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[6]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[5]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[4]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[3]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[2]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[1]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[0]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/control_unit_tb/apb/psel_to_penable_cov apb_if Verilog  SVA  input/apb_if.sv(217)
+                                                                              1418 Covered   
+/control_unit_tb/apb/penable_deassert_cov 
+                                         apb_if Verilog  SVA  input/apb_if.sv(232)
+                                                                              1423 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_pready_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(167)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_pslverr_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(177)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_prdata_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(187)
+                                                                              375975 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_clr_out_pulse 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(197)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_clr_out_valid_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(207)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_cfg_out_pulse 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(217)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_cfg_out_valid_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(227)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_start_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(237)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_valid_start_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(247)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_stop_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(257)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_valid_stop_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(267)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_level_out_pulse 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(277)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_level_out_valid_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(287)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_standby 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(297)
+                                                                              3256 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_out_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(307)
+                                                                               184 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_out_low 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(317)
+                                                                              378627 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_fifo_drain 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(330)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_irq_out_rise_first 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(340)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_irq_out_high 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(352)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_irq_out_standby 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(362)
+                                                                              3266 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_irq_out_down 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(372)
+                                                                                 5 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_cfg_reg_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(382)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_level_reg_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(392)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_pslverr 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(9)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_pready 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(19)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rindex_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(29)
+                                                                              2836 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rindex_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(39)
+                                                                              375975 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_index_range 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(49)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(59)
+                                                                               232 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_status_reg_play 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(69)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_status_reg_standby 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(79)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(89)
+                                                                              378568 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_reg_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(99)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_reg_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(109)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_dsp_regs_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(119)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(129)
+                                                                               361 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_failed_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(139)
+                                                                                 0 ZERO      
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(149)
+                                                                              378438 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_inc 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(159)
+                                                                               355 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_loop 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(169)
+                                                                                 6 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(179)
+                                                                              378438 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(189)
+                                                                                 6 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_off_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(199)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_off_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(209)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(219)
+                                                                              378197 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_inc_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(229)
+                                                                                60 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_inc_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(239)
+                                                                               177 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_loop_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(249)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_loop_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(259)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(270)
+                                                                              378558 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lempty_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(280)
+                                                                              2434 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lempty_of 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(290)
+                                                                              376377 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfull_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(300)
+                                                                              5556 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfull_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(310)
+                                                                              373255 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfifo_output_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(320)
+                                                                              376377 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfifo_output_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(330)
+                                                                              2434 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_rbank 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(340)
+                                                                               908 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_lfifo 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(350)
+                                                                               964 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_rfifo 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(360)
+                                                                               964 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(370)
+                                                                              375975 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_rise 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(380)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_fall 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(390)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(400)
+                                                                              378795 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_out_state 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(410)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(420)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(430)
+                                                                              378810 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(440)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_out_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(450)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_out_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(460)
+                                                                              378810 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_start_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(470)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_start_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(480)
+                                                                              378808 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_stop_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(490)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_stop_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(500)
+                                                                              378808 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_out_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(510)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_out_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(520)
+                                                                              378810 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irqack_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(530)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irqack_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(540)
+                                                                              378808 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_tick_out_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(550)
+                                                                              3266 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_tick_out_of 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(560)
+                                                                              375545 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_req_r_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(570)
+                                                                              375544 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_req_r_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(580)
+                                                                              3256 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_rise 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(590)
+                                                                                69 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_fall_stop 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(600)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_fall_irqack 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(610)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(620)
+                                                                              378726 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_out 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(630)
+                                                                              378811 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[105]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[104]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[103]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[102]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[101]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[100]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[99]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[98]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[97]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[96]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[95]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[94]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[93]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[92]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[91]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[90]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[89]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[88]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[87]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[86]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[85]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[84]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[83]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[82]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[81]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[80]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[79]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[78]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[77]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[76]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[75]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[74]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[73]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[72]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[71]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[70]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[69]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[68]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[67]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[66]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[65]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[64]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[63]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[62]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[61]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[60]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[59]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[58]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[57]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[56]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[55]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[54]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[53]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[52]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[51]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[50]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[49]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[48]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[47]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[46]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[45]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[44]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[43]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[42]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[41]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[40]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[39]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[38]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[37]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[36]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[35]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[34]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[33]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[32]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[31]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[30]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[29]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[28]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[27]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[26]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[25]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[24]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[23]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[22]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[21]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[20]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[19]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[18]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[17]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[16]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[15]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[14]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[13]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[12]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[11]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[10]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[9]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[8]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[7]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[6]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[5]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[4]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[3]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[2]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[1]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[0]/cf_dsp_regs_drv 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
+                                                                                 2 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 99.48%  COVERS: 194
+
+Total Coverage By Instance (filtered view): 99.48%
+

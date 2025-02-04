@@ -1,9 +1,9 @@
    // PSLVERR : r_pslverr
 
    property r_pslverr;
-						      @(posedge clk ) disable iff (rst_n == '0)
-							!PSLVERR;
-						   endproperty
+      @(posedge clk ) disable iff (rst_n == '0)
+	!PSLVERR;
+   endproperty
 
    ar_pslverr: assert property(r_pslverr) else assert_error("ar_pslverr");
    cr_pslverr: cover property(r_pslverr);

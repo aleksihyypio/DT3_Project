@@ -115,16 +115,6 @@ task fifo_bus_test;
 	addr = LEFT_FIFO_ADDRESS;
 	wdata = 0 + i;
 	apb.write(addr, wdata, wfail);
-   end
-
-   for (int i = 0; i < AUDIO_FIFO_SIZE; ++i) begin
-	addr = RIGHT_FIFO_ADDRESS;
-	wdata = 2 + i;
-	apb.write(addr, wdata, wfail);
-   end
-
-   for (int i = 0; i < AUDIO_FIFO_SIZE; ++i) begin
-	addr = LEFT_FIFO_ADDRESS;
 	apb.read(addr, rdata, rfail);
 	ia_fifo_bus_test1: assert (!rfail && rdata == (0 + i)) else 
          assert_error("ia_fifo_bus_test_1");
@@ -132,6 +122,8 @@ task fifo_bus_test;
 
    for (int i = 0; i < AUDIO_FIFO_SIZE; ++i) begin
 	addr = RIGHT_FIFO_ADDRESS;
+	wdata = 2 + i;
+	apb.write(addr, wdata, wfail);
 	apb.read(addr, rdata, rfail);
 	ia_fifo_bus_test2: assert (!rfail && rdata == (2 + i)) else 
          assert_error("ia_fifo_bus_test_2");
