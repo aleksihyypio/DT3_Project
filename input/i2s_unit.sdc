@@ -13,8 +13,8 @@ set_input_delay  -clock clk 5.0 rst_n
 
 # 3. Define input external delays (arrival times) wrt clock in ns
 
-set_input_delay  -clock clk 0.0 [all_inputs]
+set_input_delay  -clock clk 6.775 [all_inputs]
 
 # 4. Define output external delays (setup times) wrt clock in ns
 
-set_output_delay  -clock clk 0.0 [all_outputs]
+set_output_delay  -clock clk 6.775 [all_outputs]
