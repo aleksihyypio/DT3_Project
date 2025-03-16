@@ -15,21 +15,21 @@ set_input_delay  -clock clk 5.0 rst_n
 
 # 3. Define data input external delays
 
-set_input_delay  -clock clk 0.0 test_mode_in
-set_input_delay  -clock clk 0.0 audio0_in
-set_input_delay  -clock clk 0.0 audio1_in
-set_input_delay  -clock clk 0.0 play_in
-set_input_delay  -clock clk 0.0 tick_in
+set_input_delay  -clock clk 1.25 test_mode_in
+set_input_delay  -clock clk 1.25 audio0_in
+set_input_delay  -clock clk 1.25 audio1_in
+set_input_delay  -clock clk 1.25 play_in
+set_input_delay  -clock clk 1.25 tick_in
 
-set_input_delay  -clock mclk 0.0 req_in
+set_input_delay  -clock mclk 6.775 req_in
 
 # 4. Define output external delays relative to clock mclk in ns
 
-set_output_delay  -clock mclk 0.0 audio0_out
-set_output_delay  -clock mclk 0.0 audio1_out
-set_output_delay  -clock mclk 0.0 tick_out
-set_output_delay  -clock mclk 0.0 play_out 
+set_output_delay  -clock mclk 6.775 audio0_out
+set_output_delay  -clock mclk 6.775 audio1_out
+set_output_delay  -clock mclk 6.775 tick_out
+set_output_delay  -clock mclk 6.775 play_out 
 
-set_output_delay  -clock clk 0.0 req_out
+set_output_delay  -clock clk 1.25 req_out
 
 

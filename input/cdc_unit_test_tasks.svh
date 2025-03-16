@@ -31,17 +31,17 @@ task automatic testmux_test;
    
    test_mode_in = '1;
    rst_n = '0;
-   repeat(4)
+   repeat(8)
      begin
-	@(posedge mclk);
+	@(negedge clk);
      end
 
    // 5.
    
    rst_n = '1;
-   repeat(4)
+   repeat(8)
      begin
-	@(posedge mclk);
+	@(negedge clk);
      end
 
    test_mode_in = '0;   

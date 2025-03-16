@@ -25,17 +25,15 @@ module cdc_unit
    
    logic 	       mrst_n;
    logic 	       rsync_clk;
-   logic	       reset_ff1;
-   logic	       reset_ff2;
-   logic	       play_ff1;
-   logic	       play_ff2;
-   logic	       req_ff1;
-   logic	       req_ff2;
+   logic	       reset_ff1, reset_ff2;
+   logic	       play_ff1, play_ff2;
+   logic	       req_ff1, req_ff2;
    logic [23:0]        tx_r1, tx_r2;
    logic [23:0]        rx_r1, rx_r2;
    logic 	       sreq, sack;
    logic	       req_r1, req_r2;
    logic	       ack_r1, ack_r2;
+   logic               req_pulse_ff1, req_pulse_ff2;
    typedef enum logic [1:0] {
      TX_IDLE = 2'b00,    
      TX_REQ  = 2'b01,    
@@ -84,17 +82,27 @@ module cdc_unit
 
    assign play_out = play_ff2;
 
-   always_ff @(posedge clk or negedge mrst_n) begin : req_sync
-     if (mrst_n == '0) begin
-	req_ff1 <= '0;
-	req_ff2 <= '0;
+   always_ff @(posedge clk or negedge rst_n) begin : req_sync
+     if (rst_n == '0) begin
+	req_ff1 <= 0;
+	req_ff2 <= 0;
      end else begin
 	req_ff1 <= req_in;
 	req_ff2 <= req_ff1;
-     end
+    end
    end : req_sync
 
-   assign req_out = ~req_ff1 & req_ff2;
+   always_ff @(posedge clk or negedge rst_n) begin : req_pulse_gen
+     if (rst_n == '0) begin
+	req_pulse_ff1 <= '0;
+	req_pulse_ff2 <= '0;
+     end else begin
+	req_pulse_ff1 <= req_ff2;
+	req_pulse_ff2 <= req_pulse_ff1;
+     end
+   end : req_pulse_gen
+
+   assign req_out = req_pulse_ff1 & !req_pulse_ff2;
    
    always_comb begin : tx_fsm_comb
      tx_next_state = tx_state; 
@@ -136,6 +144,7 @@ module cdc_unit
 
    always_comb begin : rx_fsm_comb
      rx_next_state = rx_state; 
+     tick_out = 0;
      case (rx_state)
        RX_IDLE: begin
          tick_out = 0;
@@ -174,7 +183,7 @@ module cdc_unit
         req_r1 <= '0;
         req_r2 <= '0;
      end else begin
-        req_r1 <= (tx_state == TX_REQ);
+        req_r1 <= tx_state[0];
         req_r2 <= req_r1;
      end
    end
@@ -188,7 +197,7 @@ module cdc_unit
         ack_r1 <= '0;
         ack_r2 <= '0;
      end else begin
-        ack_r1 <= (rx_state == RX_ACK);
+        ack_r1 <= rx_state;
         ack_r2 <= ack_r1;
      end
    end
