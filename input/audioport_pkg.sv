@@ -109,7 +109,7 @@ package audioport_pkg;
    //----------------------------------------------------------------   
 
 `ifndef SYNTHESIS
-   localparam int 	    CDC_DATASYNC_INTERVAL   = 6 + int'(6.0*$ceil(MCLK_PERIOD/CLK_PERIOD)); // in clk cycles
+   localparam int 	    CDC_DATASYNC_INTERVAL   = 6 + int'(5.0*$ceil(MCLK_PERIOD/CLK_PERIOD)); // in clk cycles
    localparam int 	    CDC_DATASYNC_LATENCY    = 6 + int'(3.0*$ceil(MCLK_PERIOD/CLK_PERIOD)); // in mclk cycles
    localparam int 	    CDC_BITSYNC_INTERVAL    = int'($ceil(MCLK_PERIOD/CLK_PERIOD));         // in clk cycles
    localparam int 	    CDC_BITSYNC_LATENCY     = 2;  // in mclk cycles 

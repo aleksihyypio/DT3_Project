@@ -27,13 +27,12 @@ module cdc_unit
    logic 	       rsync_clk;
    logic	       reset_ff1, reset_ff2;
    logic	       play_ff1, play_ff2;
-   logic	       req_ff1, req_ff2;
+   logic	       req_ff1, req_ff2, req_ff3;
    logic [23:0]        tx_r1, tx_r2;
    logic [23:0]        rx_r1, rx_r2;
    logic 	       sreq, sack;
    logic	       req_r1, req_r2;
    logic	       ack_r1, ack_r2;
-   logic               req_pulse_ff1, req_pulse_ff2;
    typedef enum logic [1:0] {
      TX_IDLE = 2'b00,    
      TX_REQ  = 2'b01,    
@@ -50,7 +49,7 @@ module cdc_unit
      if (test_mode_in) begin
 	muxclk_out = clk;
 	muxrst_n_out = rst_n;
-	rsync_clk = clk;
+	rsync_clk = ~clk;
      end else begin
 	muxclk_out = mclk;
 	muxrst_n_out = mrst_n;
@@ -70,8 +69,8 @@ module cdc_unit
 
    assign mrst_n = reset_ff2;
 
-   always_ff @(posedge mclk or negedge mrst_n) begin : bit_sync
-     if (mrst_n == '0) begin
+   always_ff @(posedge muxclk_out or negedge muxrst_n_out) begin : bit_sync
+     if (muxrst_n_out == '0) begin
 	play_ff1 <= '0;
 	play_ff2 <= '0;
      end else begin
@@ -86,23 +85,15 @@ module cdc_unit
      if (rst_n == '0) begin
 	req_ff1 <= 0;
 	req_ff2 <= 0;
+	req_ff3 <= 0;
      end else begin
 	req_ff1 <= req_in;
 	req_ff2 <= req_ff1;
+	req_ff3 <= req_ff2;
     end
    end : req_sync
 
-   always_ff @(posedge clk or negedge rst_n) begin : req_pulse_gen
-     if (rst_n == '0) begin
-	req_pulse_ff1 <= '0;
-	req_pulse_ff2 <= '0;
-     end else begin
-	req_pulse_ff1 <= req_ff2;
-	req_pulse_ff2 <= req_pulse_ff1;
-     end
-   end : req_pulse_gen
-
-   assign req_out = req_pulse_ff1 & !req_pulse_ff2;
+   assign req_out = !req_ff2 & req_ff3;
    
    always_comb begin : tx_fsm_comb
      tx_next_state = tx_state; 
@@ -160,12 +151,11 @@ module cdc_unit
             rx_next_state = RX_ACK;
          end
        end
-       default: rx_next_state = RX_IDLE;
      endcase
    end : rx_fsm_comb
 
-   always_ff @(posedge mclk or negedge mrst_n) begin : rx_register_update
-     if (mrst_n == '0) begin
+   always_ff @(posedge muxclk_out or negedge muxrst_n_out) begin : rx_register_update
+     if (muxrst_n_out == '0) begin
         rx_state <= RX_IDLE;
         rx_r1 <= 0;
         rx_r2 <= 0;
@@ -178,8 +168,8 @@ module cdc_unit
      end
    end : rx_register_update
 
-   always_ff @(posedge mclk or negedge mrst_n) begin
-     if (mrst_n == '0) begin
+   always_ff @(posedge muxclk_out or negedge muxrst_n_out) begin
+     if (muxrst_n_out == '0) begin
         req_r1 <= '0;
         req_r2 <= '0;
      end else begin

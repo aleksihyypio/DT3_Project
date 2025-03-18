@@ -72,7 +72,8 @@ set RTL_SIMULATION_TIME        "-all"
 set GATELEVEL_SIMULATION_TIME  "-all"
 
 # Define wilcard pattern that match sync flip-flop names
-# set VSIM_DISABLE_TIMINGCHECKS { "*ff1*"  }
+set VSIM_DISABLE_TIMINGCHECKS { "*ff1*" "*ff2*"  }
+
 
 ###################################################################
 # Settings for static verification scripts
