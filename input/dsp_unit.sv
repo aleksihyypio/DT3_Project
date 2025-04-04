@@ -34,7 +34,7 @@ module dsp_unit(
    // The module is in file results/dsp_unit_rtl.v.
    ///////////////////////////////////////////////////////////////////////////////
    
-   // dsp_unit_rtl dsp_unit_rtl_1 (.*);
+    dsp_unit_rtl dsp_unit_rtl_1 (.*);
    
 endmodule
 

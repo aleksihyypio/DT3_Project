@@ -9,6 +9,8 @@
 //
 ///////////////////////////////////////////////////////////
 
+// `define DEBUG
+
 class audioport_predictor extends uvm_component;
    `uvm_component_utils(audioport_predictor)
    
@@ -84,6 +86,10 @@ class audioport_predictor extends uvm_component;
    
    function void write(apb_transaction t);
       apb_transaction tx = t;
+
+`ifdef DEBUG
+      $display("%f: audioport_predictor.write: %h %d %b", $realtime, tx.addr, tx.data, tx.write_mode);
+`endif
       
       if (t.write_mode == '1)
 	begin
@@ -175,14 +181,14 @@ class audioport_predictor extends uvm_component;
 	     begin
 		lfifo_r.push_back(tx.data[23:0]);
 `ifdef DEBUG
-		$display("%f: audioport_predictor: %d => lfifo_r = %d", $realtime, tx.data[23:0]);
+		$display("%f: audioport_predictor: lfifo_r = %d", $realtime, tx.data[23:0]);		
 `endif
 	     end
 	   else if (tx.addr == RIGHT_FIFO_ADDRESS)
 	     begin
 		rfifo_r.push_back(tx.data[23:0]);
 `ifdef DEBUG
-		$display("%f: audioport_predictor: %d => rfifo_r = %d", $realtime, tx.data[23:0]);
+		$display("%f: audioport_predictor: rfifo_r = %d", $realtime, tx.data[23:0]);		
 `endif
 	     end
 	   else
@@ -215,7 +221,7 @@ class audioport_predictor extends uvm_component;
       $display("%f: audioport_predictor: queue_size = %d", $realtime, output_queue.size());
 `endif
 `ifdef DEBUG
-      $display("%f: audioport_predictor: audio out = %d, %d", $realtime, $signed(t.audio_data[0]), $signed(t.audio_data[1]));
+      $display("%f: audioport_predictor: audio out = %d, %d", $realtime, $signed(t.audio_data[0]), $signed(t.audio_data[1]));      
 `endif
       
       return 1;

@@ -1,0 +1,288 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE
+=== Design Unit: work.control_unit_svamod
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      2        na        na    22.50%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins         25         4        21    16.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_rbwrites 
+                                                       20.00%        100          -    Uncovered            
+    covered/total bins:                                     1          5          -                      
+    missing/total bins:                                     4          5          -                      
+    % Hit:                                             20.00%        100          -                      
+    Coverpoint addresses                               20.00%        100          -    Uncovered            
+        covered/total bins:                                 1          5          -                      
+        missing/total bins:                                 4          5          -                      
+        % Hit:                                         20.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/rbwrites_cg  
+                                                       20.00%        100          -    Uncovered            
+    covered/total bins:                                     1          5          -                      
+    missing/total bins:                                     4          5          -                      
+    % Hit:                                             20.00%        100          -                      
+    Coverpoint addresses                               20.00%        100          -    Uncovered            
+        covered/total bins:                                 1          5          -                      
+        missing/total bins:                                 4          5          -                      
+        % Hit:                                         20.00%        100          -                      
+        bin cmd_reg                                         0          1          -    ZERO                 
+        bin cfg_reg                                         4          1          -    Covered              
+        bin level_reg                                       0          1          -    ZERO                 
+        bin dsp_regs[587202564]                             0          1          -    ZERO                 
+        bin dsp_regs[587202669]                             0          1          -    ZERO                 
+        default bin illegal[0]                           2052                     -    Occurred             
+        default bin illegal[1073741823]                  2000                     -    Occurred             
+ TYPE /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_commands 
+                                                       25.00%        100          -    Uncovered            
+    covered/total bins:                                     3         20          -                      
+    missing/total bins:                                    17         20          -                      
+    % Hit:                                             15.00%        100          -                      
+    Coverpoint commands                                16.66%        100          -    Uncovered            
+        covered/total bins:                                 1          6          -                      
+        missing/total bins:                                 5          6          -                      
+        % Hit:                                         16.66%        100          -                      
+    Coverpoint modes                                   50.00%        100          -    Uncovered            
+        covered/total bins:                                 1          2          -                      
+        missing/total bins:                                 1          2          -                      
+        % Hit:                                         50.00%        100          -                      
+    Cross command_modes                                 8.33%        100          -    Uncovered            
+        covered/total bins:                                 1         12          -                      
+        missing/total bins:                                11         12          -                      
+        % Hit:                                          8.33%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/commands_cg  
+                                                       25.00%        100          -    Uncovered            
+    covered/total bins:                                     3         20          -                      
+    missing/total bins:                                    17         20          -                      
+    % Hit:                                             15.00%        100          -                      
+    Coverpoint commands                                16.66%        100          -    Uncovered            
+        covered/total bins:                                 1          6          -                      
+        missing/total bins:                                 5          6          -                      
+        % Hit:                                         16.66%        100          -                      
+        bin start_cmd                                       0          1          -    ZERO                 
+        bin stop_cmd                                        0          1          -    ZERO                 
+        bin level_cmd                                       0          1          -    ZERO                 
+        bin irqack_cmd                                      0          1          -    ZERO                 
+        bin clr_cmd                                      1014          1          -    Covered              
+        bin cfg_cmd                                         0          1          -    ZERO                 
+        default bin illegal_cmd[0]                       1042                     -    Occurred             
+        default bin illegal_cmd[4294967295]              2000                     -    Occurred             
+    Coverpoint modes                                   50.00%        100          -    Uncovered            
+        covered/total bins:                                 1          2          -                      
+        missing/total bins:                                 1          2          -                      
+        % Hit:                                         50.00%        100          -                      
+        bin standby                                      4056          1          -    Covered              
+        bin playing                                         0          1          -    ZERO                 
+    Cross command_modes                                 8.33%        100          -    Uncovered            
+        covered/total bins:                                 1         12          -                      
+        missing/total bins:                                11         12          -                      
+        % Hit:                                          8.33%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <clr_cmd,standby>                        1014          1          -    Covered              
+            bin <cfg_cmd,*>                                 0          1          2    ZERO                 
+            bin <irqack_cmd,*>                              0          1          2    ZERO                 
+            bin <level_cmd,*>                               0          1          2    ZERO                 
+            bin <stop_cmd,*>                                0          1          2    ZERO                 
+            bin <start_cmd,*>                               0          1          2    ZERO                 
+            bin <*,playing>                                 0          1          6    ZERO                 
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE
+=== Design Unit: work.dsp_unit_svamod
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na     0.00%
+        Coverpoints/Crosses          1        na        na        na
+            Covergroup Bins          2         0         2     0.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE/cg_dsp_modes 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint cfgbit                                   0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE/cg_dsp_modes_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint cfgbit                                   0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin modes[0]                                        0          1          -    ZERO                 
+        bin modes[1]                                        0          1          -    ZERO                 
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/CHECKER_MODULE
+=== Design Unit: work.audioport_svamod
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na     0.00%
+        Coverpoints/Crosses          1        na        na        na
+            Covergroup Bins          2         0         2     0.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /audioport_tb/DUT_INSTANCE/CHECKER_MODULE/cg_active_config 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint configs                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/CHECKER_MODULE/cg_active_config_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint configs                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin cfgmodes[0]                                     0          1          -    ZERO                 
+        bin cfgmodes[1]                                     0          1          -    ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_rbwrites 
+                                                       20.00%        100          -    Uncovered            
+    covered/total bins:                                     1          5          -                      
+    missing/total bins:                                     4          5          -                      
+    % Hit:                                             20.00%        100          -                      
+    Coverpoint addresses                               20.00%        100          -    Uncovered            
+        covered/total bins:                                 1          5          -                      
+        missing/total bins:                                 4          5          -                      
+        % Hit:                                         20.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/rbwrites_cg  
+                                                       20.00%        100          -    Uncovered            
+    covered/total bins:                                     1          5          -                      
+    missing/total bins:                                     4          5          -                      
+    % Hit:                                             20.00%        100          -                      
+    Coverpoint addresses                               20.00%        100          -    Uncovered            
+        covered/total bins:                                 1          5          -                      
+        missing/total bins:                                 4          5          -                      
+        % Hit:                                         20.00%        100          -                      
+        bin cmd_reg                                         0          1          -    ZERO                 
+        bin cfg_reg                                         4          1          -    Covered              
+        bin level_reg                                       0          1          -    ZERO                 
+        bin dsp_regs[587202564]                             0          1          -    ZERO                 
+        bin dsp_regs[587202669]                             0          1          -    ZERO                 
+        default bin illegal[0]                           2052                     -    Occurred             
+        default bin illegal[1073741823]                  2000                     -    Occurred             
+ TYPE /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_commands 
+                                                       25.00%        100          -    Uncovered            
+    covered/total bins:                                     3         20          -                      
+    missing/total bins:                                    17         20          -                      
+    % Hit:                                             15.00%        100          -                      
+    Coverpoint commands                                16.66%        100          -    Uncovered            
+        covered/total bins:                                 1          6          -                      
+        missing/total bins:                                 5          6          -                      
+        % Hit:                                         16.66%        100          -                      
+    Coverpoint modes                                   50.00%        100          -    Uncovered            
+        covered/total bins:                                 1          2          -                      
+        missing/total bins:                                 1          2          -                      
+        % Hit:                                         50.00%        100          -                      
+    Cross command_modes                                 8.33%        100          -    Uncovered            
+        covered/total bins:                                 1         12          -                      
+        missing/total bins:                                11         12          -                      
+        % Hit:                                          8.33%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/commands_cg  
+                                                       25.00%        100          -    Uncovered            
+    covered/total bins:                                     3         20          -                      
+    missing/total bins:                                    17         20          -                      
+    % Hit:                                             15.00%        100          -                      
+    Coverpoint commands                                16.66%        100          -    Uncovered            
+        covered/total bins:                                 1          6          -                      
+        missing/total bins:                                 5          6          -                      
+        % Hit:                                         16.66%        100          -                      
+        bin start_cmd                                       0          1          -    ZERO                 
+        bin stop_cmd                                        0          1          -    ZERO                 
+        bin level_cmd                                       0          1          -    ZERO                 
+        bin irqack_cmd                                      0          1          -    ZERO                 
+        bin clr_cmd                                      1014          1          -    Covered              
+        bin cfg_cmd                                         0          1          -    ZERO                 
+        default bin illegal_cmd[0]                       1042                     -    Occurred             
+        default bin illegal_cmd[4294967295]              2000                     -    Occurred             
+    Coverpoint modes                                   50.00%        100          -    Uncovered            
+        covered/total bins:                                 1          2          -                      
+        missing/total bins:                                 1          2          -                      
+        % Hit:                                         50.00%        100          -                      
+        bin standby                                      4056          1          -    Covered              
+        bin playing                                         0          1          -    ZERO                 
+    Cross command_modes                                 8.33%        100          -    Uncovered            
+        covered/total bins:                                 1         12          -                      
+        missing/total bins:                                11         12          -                      
+        % Hit:                                          8.33%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <clr_cmd,standby>                        1014          1          -    Covered              
+            bin <cfg_cmd,*>                                 0          1          2    ZERO                 
+            bin <irqack_cmd,*>                              0          1          2    ZERO                 
+            bin <level_cmd,*>                               0          1          2    ZERO                 
+            bin <stop_cmd,*>                                0          1          2    ZERO                 
+            bin <start_cmd,*>                               0          1          2    ZERO                 
+            bin <*,playing>                                 0          1          6    ZERO                 
+ TYPE /audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE/cg_dsp_modes 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint cfgbit                                   0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE/cg_dsp_modes_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint cfgbit                                   0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin modes[0]                                        0          1          -    ZERO                 
+        bin modes[1]                                        0          1          -    ZERO                 
+ TYPE /audioport_tb/DUT_INSTANCE/CHECKER_MODULE/cg_active_config 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint configs                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/CHECKER_MODULE/cg_active_config_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint configs                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin cfgmodes[0]                                     0          1          -    ZERO                 
+        bin cfgmodes[1]                                     0          1          -    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 11.25%  COVERGROUP TYPES: 4
+
+Total Coverage By Instance (filtered view): 11.25%
+

@@ -122,7 +122,7 @@ package audioport_pkg;
    //----------------------------------------------------------------   
 
 `ifndef SYNTHESIS   
-   localparam int 	    DSP_UNIT_MAX_LATENCY = int'($ceil(real'(CLK_DIV_48000)/16.0));
+   localparam int 	    DSP_UNIT_MAX_LATENCY = 120;
 `endif
 
 endpackage
