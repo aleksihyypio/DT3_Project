@@ -99,7 +99,7 @@ int sc_main( int argc, char *argv[] )
   close_results_files();
   cout << "SIMULATION STOPPED AT TIME = " << sc_time_stamp() << endl;
   cout << "--------------------------------------------------------------------------------" << endl;
-  cout << "Maximum latency = " << max_latency << endl;
+  cout << "Maximum latency: SEE ABOVE!"  << endl;
   cout << "--------------------------------------------------------------------------------" << endl;
 
   return 0;  

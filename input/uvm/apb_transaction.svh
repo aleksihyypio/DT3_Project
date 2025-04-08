@@ -11,12 +11,18 @@ class apb_transaction extends uvm_sequence_item;
    rand logic [31:0] data;
    rand logic write_mode;
    logic fail;
+
+   localparam logic [31:0] CMD_REG_ADDRESS = 32'h8C000000;
+   localparam logic [31:0] LEFT_FIFO_ADDRESS  = 32'h8C0001B8;
+   localparam logic [31:0] RIGHT_FIFO_ADDRESS = 32'h8C0001BC;
    
    function new (string name = "");
       super.new(name);
    endfunction
    
    constraint c_addr { addr >= APB_START_ADDRESS; addr < APB_END_ADDRESS; }
+   constraint c_align { addr[1:0] == 2'b00; }
+   constraint c_regs { addr != CMD_REG_ADDRESS; addr != LEFT_FIFO_ADDRESS; addr != RIGHT_FIFO_ADDRESS; }
    
    function void do_copy(uvm_object rhs);
       apb_transaction rhs_;

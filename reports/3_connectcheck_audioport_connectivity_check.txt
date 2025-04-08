@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Questa PropCheck Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
 -------------------------------------------------------------------------------
-Report Generated               : Thu Jan  9 22:30:27 2025
+Report Generated               : Tue Apr  8 13:37:59 2025
 -------------------------------------------------------------------------------
 
 Executing Command : formal verify -exclude_cover -group connectcheck  
@@ -9,7 +9,8 @@ Executing Command : formal verify -exclude_cover -group connectcheck
 
 Clock Relationships
 -------------------------------------------------------------------------------
-\$global_clock           : -
+clk (default)            : PN
+\$global_clock           : TT
 
 
 Using user-specified initialization sequence:
@@ -25,11 +26,13 @@ rst_n = 1
 
 
 Port Constraints
--------------------------------------------------------------------------------
-Category            Value       Directive   Port      
--------------------------------------------------------------------------------
-<empty>
--------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Category            Value                      Directive               Port      
+---------------------------------------------------------------------------------
+Clock               period 100(PE@0,NE@50)     <inferred>              clk       
+---------------------------------------------------------------------------------
+Reset               active_low(init_seq,1'b1)  <inferred>,formal init  rst_n     
+---------------------------------------------------------------------------------
 
 
 -------------------------------------------------------------------------------
@@ -110,14 +113,28 @@ LINE_9_CHECK_connect (netlist property)
 -------------------------------------------------------------------------------
 X Registers at Completion of Initialization Sequence
 -------------------------------------------------------------------------------
-  0 registers (100.0% of 0 in sequential fanin of properties)
+  11 registers (2.3% of 480 in sequential fanin of properties)
+-------------------------------------------------------------------------------
+  cdc_unit_1.play_ff1 (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/cdc_unit.sv, Line 29) 1'bx
+  cdc_unit_1.play_ff2 (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/cdc_unit.sv, Line 29) 1'bx
+  cdc_unit_1.req_r1 (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/cdc_unit.sv, Line 34) 1'bx
+  cdc_unit_1.req_r2 (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/cdc_unit.sv, Line 34) 1'bx
+  cdc_unit_1.rx_r1 (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/cdc_unit.sv, Line 32) 24'bxxxxxxxxxxxxxxxxxxxxxxxx
+  cdc_unit_1.rx_r2 (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/cdc_unit.sv, Line 32) 24'bxxxxxxxxxxxxxxxxxxxxxxxx
+  cdc_unit_1.rx_state (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/cdc_unit.sv, Line 46) 1'bx
+  i2s_unit_1.audio_data_reg (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/i2s_unit.vhd, Line 37) 
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  i2s_unit_1.counter_reg (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/i2s_unit.vhd, Line 39) "XXXXXXXXX"
+  i2s_unit_1.mode_reg (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/i2s_unit.vhd, Line 36) "X"
+  i2s_unit_1.shift_reg (File /homedir01/ahyypio20/DT3_2025/project/workdir/input/i2s_unit.vhd, Line 38) 
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 -------------------------------------------------------------------------------
 
 
 -------------------------------------------------------------------------------
 Z Registers at Completion of Initialization Sequence
 -------------------------------------------------------------------------------
-  0 registers (100.0% of 0 in sequential fanin of properties)
+  0 registers (0.0% of 480 in sequential fanin of properties)
 -------------------------------------------------------------------------------
 
 
@@ -269,17 +286,17 @@ Engine Performance
 ---------------------- Proofs -------------------------- Waveforms ------------
    Engine |  Safety Liveness Vacuity  Sanity |  Safety Liveness Vacuity  Sanity
 -------------------------------------------------------------------------------
-        0 |      41        0       0       0 |       0        0       0       0
-        7 |      21        0       0       0 |       0        0      28       0
-       10 |       0        0       0       0 |       0        0      34       0
+        0 |      42        0       0       0 |       0        0       0       0
+        7 |      20        0       0       0 |       0        0      29       0
+       10 |       0        0       0       0 |       0        0      33       0
 -------------------------------------------------------------------------------
 
 
 
 --------- Process Statistics ----------
-Elapsed Time                       1 s
+Elapsed Time                       2 s
 Total CPU Time                     2 s
-Total Peak Memory                2.1 GB
+Total Peak Memory                2.2 GB
 ---------- Engine Processes -----------
 Average CPU Time                   0 s
 Minimum CPU Utilization            0 %
@@ -295,41 +312,41 @@ Successful Re-connections          0
 
 
 ----- Detailed Process Statistics -----
-Elapsed Time                       1 s 
+Elapsed Time                       2 s 
 -------- Orchestration Process --------
------ lehmus-cn7.oulu.fi:1342650 ------
+------ lehmus-cn8.oulu.fi:975077 ------
 CPU Time                           1 s 
 Peak Memory                      0.4 GB
 ---------- Engine Processes -----------
------ lehmus-cn7.oulu.fi:1342780 ------
+------ lehmus-cn8.oulu.fi:975195 ------
 CPU Time                           0 s 
 Peak Memory                      0.2 GB
 CPU Utilization                    0 % 
------ lehmus-cn7.oulu.fi:1342791 ------
+------ lehmus-cn8.oulu.fi:975216 ------
 CPU Time                           0 s 
 Peak Memory                      0.2 GB
 CPU Utilization                    0 % 
------ lehmus-cn7.oulu.fi:1342773 ------
+------ lehmus-cn8.oulu.fi:975187 ------
 CPU Time                           1 s 
 Peak Memory                      0.4 GB
-CPU Utilization                    0 % 
------ lehmus-cn7.oulu.fi:1342787 ------
+CPU Utilization                  100 % 
+------ lehmus-cn8.oulu.fi:975204 ------
 CPU Time                           0 s 
 Peak Memory                      0.2 GB
 CPU Utilization                    0 % 
------ lehmus-cn7.oulu.fi:1342793 ------
+------ lehmus-cn8.oulu.fi:975213 ------
 CPU Time                           0 s 
 Peak Memory                      0.2 GB
 CPU Utilization                    0 % 
------ lehmus-cn7.oulu.fi:1342792 ------
+------ lehmus-cn8.oulu.fi:975219 ------
 CPU Time                           0 s 
 Peak Memory                      0.2 GB
 CPU Utilization                    0 % 
------ lehmus-cn7.oulu.fi:1342794 ------
+------ lehmus-cn8.oulu.fi:975221 ------
 CPU Time                           0 s 
 Peak Memory                      0.2 GB
 CPU Utilization                    0 % 
------ lehmus-cn7.oulu.fi:1342803 ------
+------ lehmus-cn8.oulu.fi:975229 ------
 CPU Time                           0 s 
 Peak Memory                      0.2 GB
 CPU Utilization                    0 % 
