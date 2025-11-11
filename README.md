@@ -1,5 +1,5 @@
 Audioport IP:
-  This IP core implements an audioport with the following main blocks:
+  - This IP core implements an audioport with the following main blocks:
 
 Blocks:
   - Control Unit: Manages configuration and control of the audio system.
